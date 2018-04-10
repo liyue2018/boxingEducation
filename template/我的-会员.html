@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('inc/header-common-static.html',{"title":"我的-会员","css_source":"<link rel='stylesheet' href='css/user-info.css'>"})
+
+<body>
+    <div class="member">
+        <!-- 会员信息 -->
+        <header>
+            <div class="userInfo-bg">
+                <figure class="person-info">
+                    <div class="circle-border">
+                        <div class="person-img">
+                            <img src="images/person.png" class="img-circle img-responsive" />
+                            <img src="images/vip-member-icon.png" alt="" class="vip-icon img-responsive" />
+                        </div>
+                    </div>
+                    <figcaption>
+                        <span>中国境内没醉过</span><br />
+                        <small class="font-red">
+                            年费会员
+                        </small>
+                    </figcaption>
+                </figure>
+                <div class="set">
+                    <a href="./设置.html">
+                        <span class="set-icon glyphicon glyphicon-cog"></span>
+                        <img src="images/set-icon.png" alt="" class="set-img img-responsive" />
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- 我的项目 -->
+        <section class="mine-items container">
+            <div class="container">
+                <h4>我的项目</h4>
+                <ul class="row project list-unstyled">
+                    <li class="col-xs-4 project-item">
+                        <a href="./观看历史.html">
+                            <span class="project-item-icon glyphicon glyphicon-time"></span>
+                            <img src="images/time-icon.png" class="img-responsive project-item-img" />
+                            <br /> 观看记录
+                        </a>
+                    </li>
+                    <li class="col-xs-4 project-item">
+                        <a href="./会员中心-普通会员.html">
+                            <span class="project-item-icon glyphicon glyphicon-user"></span>
+                            <img src="images/person-icon.png" class="img-responsive project-item-img" />
+                            <br /> 会员中心
+                        </a>
+                    </li>
+                    <li class="col-xs-4 project-item">
+                        <a href="./我的活动.html">
+                            <span class="project-item-icon glyphicon glyphicon-globe"></span>
+                            <img src="images/activity.png" class="img-responsive project-item-img" />
+                            <br /> 我的活动
+                        </a>
+                    </li>
+                    <li class="col-xs-4 project-item">
+                        <a href="./我的订单.html">
+                            <span class="project-item-icon glyphicon glyphicon-list-alt"></span>
+                            <img src="images/order.png" class="img-responsive project-item-img" />
+                            <br /> 我的订单
+                        </a>
+                    </li>
+                    <li class="col-xs-4 project-item">
+                        <a href="./我的收藏.html">
+                            <span class="project-item-icon glyphicon glyphicon-star-empty"></span>
+                            <img src="images/star-icon.png" class="img-responsive project-item-img" />
+                            <br /> 我的收藏
+                        </a>
+                    </li>
+                    <li class="col-xs-4 project-item">
+                        <a href="./意见反馈.html">
+                            <span class="project-item-icon glyphicon glyphicon-pencil"></span>
+                            <img src="images/feedback-icon.png" class="img-responsive project-item-img" />
+                            <br /> 意见反馈
+                        </a>
+                    </li>
+                    <li class="col-xs-4 project-item">
+                        <a href="./客服中心.html">
+                            <span class="project-item-icon glyphicon glyphicon-headphones"></span>
+                            <img src="images/service-icon.png" class="img-responsive project-item-img" />
+                            <br /> 客服中心
+                        </a>
+                    </li>
+                    <li class="col-xs-4 project-item">
+                        <a href="./更多VIP视频-音频-详情.html">
+                            <span class="project-item-icon glyphicon glyphicon-link"></span>
+                            <img src="images/share-icon.png" class="img-responsive project-item-img" />
+                            <br /> 分享平台
+                        </a>
+                    </li>
+                    <li class="col-xs-4 project-item">
+                        <a href="./application.html">
+                            <span class="project-item-icon glyphicon glyphicon-transfer"></span>
+                            <img src="images/popularize-icon.png" class="img-responsive project-item-img" />
+                            <br /> 我要推广
+                        </a>
+                    </li>
+                    <li class="col-xs-4 project-item">
+                        <a href="./我的收益.html">
+                            <span class="project-item-icon glyphicon glyphicon-yen"></span>
+                            <img src="images/earnings-icon.png" class="img-responsive project-item-img" />
+                            <br /> 我的收益
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!-- 底部导航栏 -->
+    @@include('inc/footer-nav-bar.html',{"mine-nav":"active"})
+</body>
+</html>

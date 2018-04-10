@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/* 头部搜索框  */
+.header-nav {
+  background: #fff;
+  padding: 0.21333rem;
+  text-align: right;
+}
+
+.header-nav .btn {
+  width: 2.66667rem;
+  line-height: 2.2;
+  display: inline-block;
+  border-radius: 0.26667rem;
+  font-size: 1em;
+}
+
+.header-nav .btn:focus {
+  outline: none;
+}
+
+.index-carousel-indicators li.active {
+  background: #5b9370;
+  border-color: #5b9370;
+}
+
+/* 公告 */
+.plate-title {
+  padding-left: 0.37333rem;
+  border-left: #f00 0.08rem solid;
+  margin-bottom: 0.53333rem;
+  font-weight: 400;
+}
+
+.affiche-carousel-indicators {
+  position: absolute;
+  bottom: 0.53333rem;
+  left: 86%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  text-align: center;
+  list-style: none;
+  margin-bottom: 0rem;
+}
+
+.affiche-carousel-indicators li {
+  background: #333;
+  border-color: #333;
+}
+
+.affiche-carousel-indicators .active {
+  background: #f00;
+  border-color: #f00;
+}
+
+.affiche-carousel-inner {
+  border-radius: 0.16rem;
+}
+
+.affiche-title {
+  margin-top: 0.48rem;
+}
+
+.affiche-date {
+  color: #9d9d9d;
+  font-size: 0.32rem;
+}
+
+/* 课程分类 */
+.course-list .row a {
+  margin-bottom: 0.26667rem;
+}
+
+.course-list .row a img {
+  width: 100%;
+  height: 2.4rem;
+}
+
+.course-list-more {
+  font-weight: normal;
+  width: 100%;
+  color: #9a9a9a;
+  border-color: #d4d4d4;
+  background: #fff;
+  padding: 0.26667rem 0;
+  margin: 0.37333rem 0;
+}
+
+/* 热门推荐 */
+.hot-recommend,
+.vip-area {
+  background: #fff;
+  padding: 0.37333rem 0;
+  margin-top: 0.53333rem;
+}
+
+.hot-recommend figure img,
+.vip-area figure img {
+  width: 100%;
+  height: 2.4rem;
+}
+
+.hotRecommend-item a,
+.prefecture-item a {
+  font-size: 1em;
+  line-height: 2;
+  color: #333;
+  margin-left: 0.13333rem;
+  padding-bottom: 0.05333rem;
+}
+
+.hotRecommend-list li.active a,
+.prefecture-list li.active a {
+  color: #f00;
+  border-bottom: 0.02667rem solid #f00;
+}
+
+.player-icon {
+  color: #fff;
+  font-size: 0.96rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -0.42667rem;
+  margin-top: -1.25333rem;
+}
+
+.hot-recommend-txt {
+  margin-top: 0.21333rem;
+  margin-left: 0.05333rem;
+}
+
+.play-number {
+  color: #989898;
+  margin-left: 0.13333rem;
+  margin-top: -0.16rem;
+}
+
+.play-number .glyphicon-eye-open {
+  padding-right: 0.08rem;
+}
+
+/* 友情链接 */
+.friendLinks-title {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+/* 尾部 */
+.index-footer {
+  margin-top: -0.48rem;
+  text-align: center;
+  font-size: 0.32rem;
+  background: #fff;
+  margin-bottom: 1.86667rem;
+}
+
+.contact-us {
+  height: 1.33333rem;
+  padding-top: 0.45333rem;
+  border-bottom: 0.02667rem solid #efeff1;
+}
+
+.contact-us a {
+  display: inline-block;
+  width: 50%;
+  color: #6e6e6e;
+}
+
+.contact-us a.intro {
+  border-right: 0.02667rem solid #999;
+}
+
+.copyright {
+  color: #9d9d9d;
+  padding: 0.26667rem 0;
+  margin-bottom: 0;
+  display: block;
+}
+
+/* 遮罩层 */
+.mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 16;
+  display: none;
+}
+
+/* 弹窗 关注公众号 */
+.wechat-window {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -4rem;
+  top: 2.13333rem;
+  width: 8rem;
+  height: 8rem;
+  z-index: 16;
+  text-align: center;
+  border: none;
+  border-radius: 0.16rem;
+  background: transparent;
+}
+
+.wechat-window .wechat-img {
+  margin: 0 auto;
+}
+
+.close-btn {
+  color: #fff;
+  font-size: 2em;
+  margin-top: 0.8rem;
+  margin-left: -0.26667rem;
+}

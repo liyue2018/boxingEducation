@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('inc/header-common-static.html',{"title":"首页搜索","css_source":"<link rel='stylesheet' href='css/resource-list.css'>"})
+
+<body>
+    <!-- 顶部搜索框 -->
+<nav class="activities-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-9 col-md-9 top-search">
+                <form class="navbar-form">
+                    <div class="form-group activity-search" style="width:100%;">
+                        <span class="glyphicon glyphicon-search search-icon"></span>
+                        <label class="sr-only">请输入关键字</label>
+                        <input type="text" class="form-control search-input" role="search" placeholder="请输入关键字" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-3 col-md-3" style="margin-top:26px;">
+                <a type="search"><span>搜索</span></a>
+            </div>
+        </div>
+    </div>
+</nav>
+    <!-- 资源列表 -->
+    <div class="armory-content">
+        <div class="container">
+            <figure class="armory-list">
+                <figcaption class="pull-left">
+                    <a href="#">
+                        <img src="http://fpoimg.com/70x60" alt="" class="img-responsive" />
+                    </a>
+                </figcaption>
+                <section class="armory-section pull-right">
+                    <div class="pull-left detail">
+                        <h5 class="title">基地开会讲师展架基地开会讲师展架</h5>
+                        <time>时间：2018.01.01</time>
+                    </div>
+                    <div class="pull-right download">
+                        <button class="btn btn-sm btn-primary download-btn">下载</button>
+                        <small class="download-num">下载量：2198</small>
+                    </div>
+                </section>
+            </figure>
+            <figure class="armory-list">
+                <figcaption class="pull-left">
+                    <a href="#">
+                        <img src="http://fpoimg.com/70x60" alt="" class="img-responsive" />
+                    </a>
+                </figcaption>
+                <section class="armory-section pull-right">
+                    <div class="pull-left detail">
+                        <h5 class="title">基地开会讲师展架基地开会讲师展架</h5>
+                        <time>时间：2018.01.01</time>
+                    </div>
+                    <div class="pull-right download">
+                        <button class="btn btn-sm btn-primary download-btn download-vip">会员下载</button>
+                        <small class="download-num">下载量：2198</small>
+                    </div>
+                </section>
+            </figure>
+        </div>
+    </div>
+    <!-- 底部导航栏 -->
+    @@include('inc/footer-nav-bar.html')
+</body>
+</html>

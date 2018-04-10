@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('inc/header-common-static.html',{"title":"我的收益","css_source":"<link rel='stylesheet' href='css/user-info.css'>"})
+
+<body>
+    <div class="mine-profits">
+         @@include('inc/top-header-bar.html',{"topHeader_title":"我的收益"})
+        <div class="profits-content">
+            <div class="row">
+                <div class="col-xs-3">
+                    <span>0.00</span>
+                    <br /> 今日收入
+                </div>
+                <div class="col-xs-3">
+                    <span>0.00</span>
+                    <br /> 总收入
+                </div>
+                <div class="col-xs-3">
+                    <span>0.00</span>
+                    <br /> 可提现
+                </div>
+                <div class="col-xs-3">
+                    <span>0.00</span>
+                    <br /> 已提现
+                </div>
+            </div>
+        </div>
+        <div class="profit">
+            <a href="./提现.html">
+                <button class="btn btn-lg btn-profit btn-info">提现</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

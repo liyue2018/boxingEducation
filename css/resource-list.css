@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/* 资源列表 */
+.resourceList-title {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-top: 0.26667rem;
+  background: #fff;
+  height: 1.06667rem;
+  line-height: 2.2;
+}
+
+.resourceList-img {
+  width: 1.86667rem;
+  height: 1.33333rem;
+  margin-right: 0.26667rem;
+}
+
+.resourceList-content-item {
+  background: #fff;
+  margin: 0.26667rem 0;
+  padding: 0.26667rem 0;
+  line-height: 3.4;
+}
+
+.resourceList-content-item a.container {
+  display: block;
+}
+
+.resourceList-content-item a.container h5 {
+  font-weight: normal;
+  margin-top: 0.53333rem;
+}
+
+/* 资源列表1-1 */
+.armory-content {
+  background: #fff;
+}
+
+.armory-content .armory-list {
+  height: 2.13333rem;
+  border-bottom: 0.02667rem solid #f1f1f1;
+  padding: 0.26667rem 0;
+  position: relative;
+  margin-top: 0;
+}
+
+.armory-content .armory-list img {
+  width: 2.4rem;
+  height: 1.33333rem;
+}
+
+.armory-content figure.armory-list figcaption {
+  width: 1.86667rem;
+  height: auto;
+}
+
+section.armory-section {
+  width: 75%;
+  height: auto;
+}
+
+section.armory-section div.detail {
+  width: 58%;
+  margin-left: 0.16rem;
+}
+
+section.armory-section div.detail .title {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+section.armory-section div.download {
+  margin-top: 0.32rem;
+  line-height: 2;
+}
+
+section.armory-section div.download .download-btn {
+  display: block;
+  background: #008aff;
+  padding: 0 0.26667rem;
+  border-color: #008aff;
+  margin: 0 auto;
+}
+
+section.armory-section div.download .download-vip {
+  background: #f00;
+  border-color: #f00;
+}
+
+.resources {
+  background: #fff;
+}
+
+.resources-title {
+  height: 1.17333rem;
+  border-bottom: 0.05333rem solid #f1f1f1;
+  font-size: 0.53333rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.resources-title span {
+  color: #999;
+}
+
+.resources-content .media {
+  border-bottom: 0.02667rem solid #f1f1f1;
+  padding: 0.16rem 0;
+  position: relative;
+  margin-top: 0;
+}
+
+.resources-content .media:first-child {
+  border-top: 0.02667rem solid #f1f1f1;
+}
+
+.resources-content .media img.collect-img,
+.resources-content .media img.img-left {
+  width: 2.4rem;
+}
+
+.resources-content .media-body {
+  line-height: 2;
+  color: #4e4e4e;
+  width: 5.70667rem;
+  padding-left: 0.53333rem;
+}
+
+.resources-content .media-body h5.title {
+  width: 2rem 120px;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.resources-content .media-body h5.title time.date {
+  display: block;
+  font-size: 0.32rem;
+  line-height: 4;
+}
+
+.resources-content .media-body .download-btn {
+  display: block;
+  background: #008aff;
+  padding: 0 0.26667rem;
+  border-color: #008aff;
+  margin: 0.21333rem 0;
+}
+
+.resources-content .media-body .dowanload-V-btn {
+  background: #f00;
+  border-color: #f00;
+}
+
+.resources-content .media-body span.download-num {
+  color: #989898;
+  font-size: 0.32rem;
+}
+
+.resources-content .search-media {
+  padding-left: 0.26667rem;
+  width: 7.46667rem;
+  padding-right: 0.8rem;
+}
+
+.resources-content .search-media h5.title {
+  width: 3.73333rem;
+}
+
+.resources-content .search-media .download {
+  position: absolute;
+  top: 0.32rem;
+  right: 0;
+}
+
+.mine-order .order-media {
+  padding: 0.10667rem 0;
+}
+
+.indent-status {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.indent-status img {
+  height: 2.66667rem;
+}
+
+.indent-status figcaption {
+  position: absolute;
+  top: 1.01333rem;
+  left: 0.90667rem;
+  font-weight: 400;
+  transform: rotate(-50deg);
+  font-size: 0.37333rem;
+  letter-spacing: 0.05333rem;
+  color: #fff;
+}
+
+.indent-info {
+  background: #fff;
+  border-radius: 0.16rem;
+  margin: 0.26667rem;
+  padding: 0.21333rem 0.4rem;
+}
+
+.indent-title {
+  border-bottom: 0.02667rem solid #f00;
+  font-size: 0.53333rem;
+  font-weight: 400;
+  padding-bottom: 0.13333rem;
+}
+
+.indent-title span {
+  display: inline-block;
+  width: 3.89333rem;
+  border-bottom: 0.02667rem solid #00aeff;
+  padding-bottom: 0.26667rem;
+  margin-bottom: -0.16rem;
+}
+
+.indent-content {
+  padding-left: 0.53333rem;
+  padding-top: 0.26667rem;
+}
+
+.indent-content address {
+  margin: 0.26667rem 0;
+}
+
+.classify {
+  border-top: 0.02667rem solid #f1f1f1;
+  background: #fff;
+  padding-bottom: 0.53333rem;
+}
+
+.classify ul {
+  padding-top: 0.26667rem;
+}
+
+.classify ul li {
+  margin: 0.26667rem 0;
+}
+
+.classify ul li img {
+  width: 100%;
+  height: 2.4rem;
+}
+
+/* 往期活动 */
+.activisties .tab-content a.col-md-6 {
+  padding: 0 0.21333rem;
+}
+
+.activisties-tab {
+  border-top: 0.05333rem solid #f1f1f1;
+  padding: 0.53333rem 0;
+  text-align: center;
+  background: #fff;
+}
+
+.activisties-tab li.active a {
+  border-bottom: 0.05333rem solid #f00;
+}
+
+.activisties-tab .tabs-border {
+  border-right: 0.02667rem solid #a0a0a0;
+}
+
+.activisties-tab .tabs {
+  display: inline-block;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 400;
+}
+
+.tabs-figure {
+  background: #fff;
+  margin-top: 0.37333rem;
+}
+
+.tabs-figure figcaption {
+  padding: 0.10667rem 0.10667rem 0.26667rem;
+}
+
+.activity-state {
+  display: block;
+  text-align: right;
+  color: #f00;
+  margin-right: 0.08rem;
+  line-height: 2;
+}
+
+.activity-content {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+/* 我的活动 */
+.mine-activity-list a.item {
+  padding: 0 0.26667rem;
+}
+
+.edit {
+  float: right;
+  font-size: 1em;
+  margin: 0.32rem;
+}
+
+.media .choice-checkbox {
+  width: 0.53333rem;
+  height: 0.53333rem;
+  border-radius: 0.26667rem !important;
+  background: #fff !important;
+  margin-top: 0.53333rem;
+  margin-right: 0.53333rem;
+  display: none;
+}
+
+.watch-btns {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  bottom: 0;
+  padding: 0.53333rem 0;
+  text-align: center;
+}
+
+.watch-btns div.del {
+  border-left: 0.02667rem solid #979797;
+}
+
+.index-search-wrap {
+  background: #f1f1f1;
+  border-bottom: 0.02667rem solid #d8d7d7;
+  margin-bottom: 0.26667rem;
+}
+
+.index-search {
+  line-height: 5;
+}
+
+.index-search .search-input {
+  border: none;
+  border-radius: 0.16rem;
+  padding: 0.32rem 0.21333rem;
+}
+
+@media all and (max-width: 360px) {
+  .resources-content .media-body {
+    width: 4.26667rem;
+  }
+}

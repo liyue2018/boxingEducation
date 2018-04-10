@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+@@include('inc/header-common-static.html',{"title":"观看历史","css_source":"<link rel='stylesheet' href='css/resource-list.css'>"})
+
+<body>
+    <div class="resources">
+        <div class="container">
+            <!-- 顶部标题 -->
+            <header class="mine-activity">
+                <!-- <div class="container">
+                    <h1 class="mine-title">
+                        <span class="glyphicon glyphicon-menu-left pull-left"></span>
+                        全部历史
+                    </h1>
+                </div> -->
+                <button class="edit btn btn-sm btn-default">编辑</button>
+            </header>
+            <div style="clear:both;"></div>
+            <ul class="resources-content list-unstyled">
+                <li class="media">
+                    <a href="#">
+                        <label class="checkbox-block pull-left">
+                            <input type="checkbox" class="pull-left choice-checkbox" value="">
+                        </label>
+                        <span class="pull-left">
+                            <img src="http://fpoimg.com/90x70" alt="" class="img-responsive" />
+                        </span>
+                        <div class="media-body">
+                            <h5 class="title">
+                                基地开会讲师展架
+                            </h5>
+                            <small>
+                                观看至3%
+                            </small>
+                        </div>
+                    </a>
+                </li>
+                <li class="media">
+                    <a href="#">
+                        <label class="checkbox-block pull-left">
+                            <input type="checkbox" class="pull-left choice-checkbox" value="">
+                        </label>
+                        <span class="pull-left">
+                            <img src="http://fpoimg.com/90x70" alt="" class="img-responsive" />
+                        </span>
+                        <div class="media-body">
+                            <h5 class="title">
+                                基地开会讲师展架
+                            </h5>
+                            <small>
+                                观看至3%
+                            </small>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <section class="watch-btns">
+            <div class="row">
+                <div class="col-xs-6">
+                    <button class="checkAll">全选</button>
+                </div>
+                <div class="col-xs-6 del">
+                    <button class="del-btn">删除</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        $(".all").click(() => {
+            $(".choice-checkbox").attr("checked", "checked");
+        });
+        $(".del-btn").click(() => {
+            $("li.media").hide();
+        });
+        $(".edit").click(() => {
+            $(".choice-checkbox").toggle();
+        });
+    </script>
+</body>
+
+</html>

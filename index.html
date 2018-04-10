@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel='stylesheet' href='css/lib/video-js.css'>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+     <link rel='stylesheet' href='css/index.css'>
+</head>
+<body>
+    <!-- 顶部按钮 -->
+    <nav class="header-nav">
+        <button class="btn btn-default btn-sm wechat-btn" type="button">关注公众号</button>
+        <a class="btn btn-default btn-sm" href="./搜索.html">
+            <span class="glyphicon glyphicon-search search-icon"></span>
+            搜索
+        </a>
+    </nav>
+    <!-- 轮播图 -->
+    <div id="index-carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators index-carousel-indicators">
+            <li data-target="#index-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#index-carousel" data-slide-to="1"></li>
+            <li data-target="#index-carousel" data-slide-to="2"></li>
+            <li data-target="#index-carousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/banner1.jpg"  alt="图片" class="img-responsive">
+            </div>
+            <div class="item">
+                <img src="images/banner2.jpg"  alt="图片" class="img-responsive">
+            </div>
+            <div class="item">
+                <img src="images/banner3.jpg"  alt="图片" class="img-responsive">
+            </div>
+            <div class="item">
+                <img src="images/banner4.jpg"  alt="图片" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    <!-- 公告 -->
+    <section class="plate affiche">
+        <h5 class="plate-title">公告</h5>
+        <div class="plate-content">
+            <!-- 公告轮播图 -->
+            <div id="affiche-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators affiche-carousel-indicators">
+                    <li data-target="#affiche-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#affiche-carousel" data-slide-to="1"></li>
+                    <li data-target="#affiche-carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner affiche-carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/index-affiche.png"  alt="图片" class="img-responsive">
+                    </div>
+                    <div class="item">
+                        <img src="images/index-affiche.png"  alt="图片" class="img-responsive">
+                    </div>
+                    <div class="item">
+                        <img src="images/index-affiche.png"  alt="图片" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <!-- 公告文本内容 -->
+            <article class="affiche-content">
+                <h5 class="affiche-title">谷雨第趣事思考《如任何讲诞生惊喜到底？》</h5>
+                <time class="affiche-date">2018年1月5日星期五</time>
+            </article>
+        </div>
+    </section>
+    
+    <!-- 课程分类 -->
+    <section class="plate course-list">
+        <h5 class="plate-title">课程分类</h5>
+        <div class="row">
+            <a href="./活动详情页.html" class="col-md-6 col-xs-6">
+                <img src="images/class.jpg" alt="图片" class="img-responsive img-rounded" />
+            </a>
+            <a href="#" class="col-md-6 col-xs-6">
+                <img src="images/class.jpg" alt="图片" class="img-responsive img-rounded" />
+            </a>
+            <a href="#" class="col-md-6 col-xs-6">
+                <img src="images/class.jpg" alt="图片" class="img-responsive img-rounded" />
+            </a>
+        </div>
+        <a href="/更多分类.html" class="btn btn-default btn-sm course-list-more">更多分类
+            <span class="glyphicon glyphicon-menu-right"></span>
+        </a>
+    </section>
+    <!-- 热门推荐 -->
+    <section class="hot-recommend">
+        <div class="container">
+            <h5 class="plate-title hot-recommend-title pull-left">热门推荐</h5>
+            <ul class="list-unstyled pull-right hotRecommend-list" role="tablist">
+                <li role="presentation" class="hotRecommend-item active pull-left">
+                    <a href="#hotVideo" class="tabs" data-toggle="tab" role="tab" aria-controls="video">视频</a>
+                </li>
+                <li role="presentation" class="prefecture-item pull-left">
+                    <a href="#hotAudio" class="tabs" data-toggle="tab" role="tab" aria-controls="audio">音频</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content container">
+            <!-- 视频内容 -->
+            <div role="tabpanel" class="tab-pane active row" id="hotVideo">
+                <figure class="col-md-6 col-xs-6">
+                    <a href="#">
+                        <img src="images/hot-recomm.png" alt="图片" class="img-responsive img-rounded" />
+                    </a>
+                    <figcaption>
+                        <h6 class="hot-recommend-txt">视频挑战精英战</h6>
+                        <p class="play-number">
+                            <span class="glyphicon glyphicon-eye-open"></span>
+                            <small>2167</small>
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="col-md-6 col-xs-6">
+                    <a href="#">
+                        <img src="images/hot-recomm.png" alt="图片" class="img-responsive img-rounded" />
+                    </a>
+                    <figcaption>
+                        <h6 class="hot-recommend-txt">视频挑战精英战</h6>
+                        <p class="play-number">
+                            <span class="glyphicon glyphicon-eye-open"></span>
+                            <small>2167</small>
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+             <!-- 音频区内容 -->
+            <div role="tabpanel" class="tab-pane row" id="hotAudio">
+                <figure class="col-md-6 col-xs-6">
+                    <a href="#">
+                        <img src="images/hot-recomm.png" alt="图片" class="img-responsive img-rounded" />
+                    </a>
+                    <figcaption>
+                        <h6 class="hot-recommend-txt">音频挑YYYY战</h6>
+                        <p class="play-number">
+                            <span class="glyphicon glyphicon-eye-open"></span>
+                            <small>2167</small>
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="col-md-6 col-xs-6">
+                    <a href="#">
+                        <img src="images/hot-recomm.png" alt="图片" class="img-responsive img-rounded" />
+                    </a>
+                    <figcaption>
+                        <h6 class="hot-recommend-txt">音频挑YYYY战</h6>
+                        <p class="play-number">
+                            <span class="glyphicon glyphicon-eye-open"></span>
+                            <small>2167</small>
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- VIP专区 -->
+    <section class="vip-area">
+        <div class="container">
+            <h5 class="plate-title pull-left">VIP专区</h5>
+            <ul class="list-unstyled pull-right hotRecommend-list" role="tablist">
+                <li role="presentation" class="hotRecommend-item active pull-left">
+                    <a href="#vipVideo" class="tabs" data-toggle="tab" role="tab" aria-controls="video">视频</a>
+                </li>
+                <li role="presentation" class="prefecture-item pull-left">
+                    <a href="#vipAudio" class="tabs" data-toggle="tab" role="tab" aria-controls="audio">音频</a>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content container">
+            <!-- 视频 -->
+            <div role="tabpanel" class="tab-pane active row" id="vipVideo">
+                <figure class="col-md-6 col-xs-6">
+                    <a href="#">
+                        <img src="images/index-vip.png" alt="图片" class="img-responsive img-rounded" />
+                    </a>
+                    <figcaption>
+                        <h6 class="hot-recommend-txt">视频挑战精英战</h6>
+                        <p class="play-number">
+                            <span class="glyphicon glyphicon-eye-open"></span>
+                            <small>2167</small>
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="col-md-6 col-xs-6">
+                    <a href="./video-vip.html">
+                        <img src="images/index-vip.png" alt="图片" class="img-responsive img-rounded" />
+                    </a>
+                    <figcaption>
+                        <h6 class="hot-recommend-txt">视频挑战精英战</h6>
+                        <p class="play-number">
+                            <span class="glyphicon glyphicon-eye-open"></span>
+                            <small>2167</small>
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- 音频区内容 -->
+            <div role="tabpanel" class="tab-pane row" id="vipAudio">
+                <figure class="col-md-6 col-xs-6">
+                    <a href="#">
+                        <img src="images/index-vip.png" alt="图片" class="img-responsive img-rounded" />
+                    </a>
+                    <figcaption>
+                        <h6 class="hot-recommend-txt">音频QQQQ</h6>
+                        <p class="play-number">
+                            <span class="glyphicon glyphicon-eye-open"></span>
+                            <small>2167</small>
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="col-md-6 col-xs-6">
+                    <a href="#">
+                        <img src="images/index-vip.png" alt="图片" class="img-responsive img-rounded" />
+                    </a>
+                    <figcaption>
+                        <h6 class="hot-recommend-txt">音频挑战QQQ</h6>
+                        <p class="play-number">
+                            <span class="glyphicon glyphicon-eye-open"></span>
+                            <small>2167</small>
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- 友情链接 -->
+    <div class="plate friend-links">
+        <h5 class="plate-title friendLinks-title">友情链接</h5>
+    </div>
+    <!-- 首页尾部 -->
+    <footer class="index-footer">
+        <nav class="contact-us">
+            <a href="#" class="intro pull-left">博星教育简介</a>
+            <a href="./客服中心.html" class="pull-left">联系我们</a>
+        </nav>
+        <small class="copyright">Copyright &copy;2018 博星教育版权所有</small>
+    </footer>
+    <!-- 遮罩层 -->
+    <div class="mask">
+        <!-- 弹窗关注公众号 -->
+        <dialog class="wechat-window">
+            <div class="container">
+                <img src="images/QR-code.png" class="img-responsive wechat-img" />
+                <span class="glyphicon glyphicon-remove-circle close-btn"></span>
+            </div>
+        </dialog>
+    </div>
+    <!-- 底部导航栏 -->
+     <nav class="navbr navbar-fixed-bottom footer-nav">
+    <div class="container">
+        <a href="./index.html" class="active">
+            <span class="glyphicon glyphicon-home"></span>
+            <!-- <br/> -->
+            <span class="footer-nav-txt">首页</span>
+        </a>
+        <a href="./资源列表.html" class="@@zy-nav">
+            <span class="glyphicon glyphicon-briefcase"></span>
+            <!-- <br/> -->
+            <span class="footer-nav-txt">资源</span>
+        </a>
+        <a href="./往期活动.html" class="@@hd-nav">
+            <span class="glyphicon glyphicon-gift"></span>
+            <!-- <br/> -->
+            <span class="footer-nav-txt">活动</span>
+        </a>
+        <a href="./我的-会员.html" class="@@mine-nav">
+            <span class="glyphicon glyphicon-user"></span>
+            <!-- <br/> -->
+            <span class="footer-nav-txt">我的</span>
+        </a>
+    </div>
+</nav>
+     <script>
+
+        //  弹出二维码
+
+         $('.wechat-btn').click(() => {
+             $('.mask').show();
+         });
+         $('.close-btn').click(() => {
+                $('.mask').hide();
+         });
+
+        //  首页轮播图时间间隔
+        $('#index-carousel').carousel({
+                interval: 2000
+            });
+        // 告示轮播图时间间隔
+        $('#affiche-carousel').carousel({
+                interval: 2500
+            });
+     </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('inc/header-common-static.html',{"title":"设置-手机号-更换手机号","css_source":"<link rel='stylesheet' href='css/user-info.css'>"})
+
+<body>
+    @@include('inc/top-header-bar.html',{"topHeader_title":"更换手机号"})
+    <!-- 有箭头的版本 -->
+    <div class="userInfo">
+        <div class="container">
+            <!-- 有箭头的版本 -->
+            <div class="userInfo-list list-unstyled">
+                <div class="list-group-item">国家和地区
+                    <span class="pull-right">中国大陆</span>
+                </div>
+                <div class="list-group-item">
+                    <b>+86</b>
+                    <input class="pull-right changeInput" type="number" placeholder="请输入您的手机号" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a class="btn btn-sm btn-info changeMobile-btn" href="#" role="button">下一步</a>
+        <small class="changeMobile-txt">一个手机号只能作为一个账号的登录名，一个手机号最多可以被6个设备绑定</small>
+    </div>
+</body>
+
+</html>

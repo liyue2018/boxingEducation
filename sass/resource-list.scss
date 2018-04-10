@@ -1,0 +1,368 @@
+//px转换rem
+@function px2rem($px) {
+    $rem: 37.5px;
+    @return ($px / $rem)+rem;
+}
+
+
+/* 资源列表 */
+
+.resourceList-title {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: px2rem(10px);
+    background: #fff;
+    height: px2rem(40px);
+    line-height: 2.2;
+}
+
+.resourceList-img {
+    width: px2rem(70px);
+    height: px2rem(50px);
+    margin-right: px2rem(10px);
+}
+
+.resourceList-content-item {
+    background: #fff;
+    margin: px2rem(10px) 0;
+    padding: px2rem(10px) 0;
+    line-height: 3.4;
+    a.container {
+        display: block;
+        h5 {
+            font-weight: normal;
+            margin-top: px2rem(20px);
+        }
+    }
+}
+
+
+/* 资源列表1-1 */
+
+.armory-content {
+    background: #fff;
+    .armory-list {
+        height: px2rem(80px);
+        border-bottom: px2rem(1px) solid #f1f1f1;
+        padding: px2rem(10px) 0;
+        position: relative;
+        margin-top: 0;
+        img {
+            width: px2rem(90px);
+            height: px2rem(50px);
+        }
+    }
+}
+
+.armory-content {
+    figure.armory-list {
+        figcaption {
+            width: px2rem(70px);
+            height: auto;
+        }
+    }
+}
+
+section.armory-section {
+    width: 75%;
+    height: auto;
+    div.detail {
+        width: 58%;
+        margin-left: px2rem(6px);
+        .title {
+            width: 90%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    div.download {
+        margin-top: px2rem(12px);
+        line-height: 2;
+        .download-btn {
+            display: block;
+            background: #008aff;
+            padding: 0 px2rem(10px);
+            border-color: #008aff;
+            margin: 0 auto;
+        }
+        .download-vip {
+            background: #f00;
+            border-color: #f00;
+        }
+    }
+}
+
+// 我的收藏
+.resources {
+    background: #fff;
+}
+
+.resources-title {
+    height: px2rem(44px);
+    border-bottom: px2rem(2px) solid #f1f1f1;
+    font-size: px2rem(20px);
+    font-weight: 300;
+    text-align: center;
+    span {
+        color: #999;
+    }
+}
+
+.resources-content {
+    .media {
+        border-bottom: px2rem(1px) solid #f1f1f1;
+        padding: px2rem(6px) 0;
+        position: relative;
+        margin-top: 0;
+        &:first-child {
+            border-top: px2rem(1px) solid #f1f1f1;
+        }
+        img.collect-img,
+        img.img-left {
+            width: px2rem(90px);
+        }
+    }
+    .media-body {
+        line-height: 2;
+        color: #4e4e4e;
+        width: px2rem(214px);
+        padding-left: px2rem(20px);
+        h5.title {
+            width: 2rem(120px);
+            font-weight: 400;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            time.date {
+                display: block;
+                font-size: px2rem(12px);
+                line-height: 4;
+            }
+        }
+        .download-btn {
+            display: block;
+            background: #008aff;
+            padding: 0 px2rem(10px);
+            border-color: #008aff;
+            margin: px2rem(8px) 0;
+        }
+        .dowanload-V-btn {
+            background: #f00;
+            border-color: #f00;
+            ;
+        }
+        span.download-num {
+            color: #989898;
+            font-size: px2rem(12px);
+        }
+    }
+    .search-media {
+        padding-left: px2rem(10px);
+        width: px2rem(280px);
+        padding-right: px2rem(30px);
+        h5.title {
+            width: px2rem(140px);
+        }
+        .download {
+            position: absolute;
+            top: px2rem(12px);
+            right: 0;
+        }
+    }
+}
+
+// 我的订单
+.mine-order {
+    .order-media {
+        padding: px2rem(4px) 0;
+    }
+}
+
+// 订单状态
+.indent-status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    img {
+        height: px2rem(100px);
+    }
+    figcaption {
+        position: absolute;
+        top: px2rem(38px);
+        left: px2rem(34px);
+        font-weight: 400;
+        transform: rotate(-50deg);
+        font-size: px2rem(14px);
+        letter-spacing: px2rem(2px);
+        color: #fff;
+    }
+}
+
+//订单详情
+.indent-info {
+    background: #fff;
+    border-radius: px2rem(6px);
+    margin: px2rem(10px);
+    padding: px2rem(8px) px2rem(15px);
+}
+
+.indent-title {
+    border-bottom: px2rem(1px) solid #f00;
+    font-size: px2rem(20px);
+    font-weight: 400;
+    padding-bottom: px2rem(5px);
+    span {
+        display: inline-block;
+        width: px2rem(146px);
+        border-bottom: px2rem(1px) solid #00aeff;
+        padding-bottom: px2rem(10px);
+        margin-bottom: px2rem(-6px);
+    }
+}
+
+.indent-content {
+    padding-left: px2rem(20px);
+    padding-top: px2rem(10px);
+    address {
+        margin: px2rem(10px) 0;
+    }
+}
+
+// 更多分类
+.classify {
+    border-top: px2rem(1px) solid #f1f1f1;
+    background: #fff;
+    padding-bottom: px2rem(20px);
+    ul {
+        padding-top: px2rem(10px);
+        li {
+            margin: px2rem(10px) 0;
+            img{
+                width: 100%;
+                height: px2rem(90px);
+            }
+        }
+    }
+}
+
+
+/* 往期活动 */
+
+.activisties {
+    .tab-content {
+        a.col-md-6 {
+            padding: 0 px2rem(8px);
+        }
+    }
+}
+
+.activisties-tab {
+    border-top: px2rem(2px) solid #f1f1f1;
+    padding: px2rem(20px) 0;
+    text-align: center;
+    background: #fff;
+    li.active {
+        a {
+            border-bottom: px2rem(2px) solid #f00;
+        }
+    }
+    .tabs-border {
+        border-right: px2rem(1px) solid #a0a0a0;
+    }
+    .tabs {
+        display: inline-block;
+        font-size: 1.2em;
+        color: #333;
+        font-weight: 400;
+    }
+}
+
+.tabs-figure {
+    background: #fff;
+    margin-top: px2rem(14px);
+    figcaption {
+        padding: px2rem(4px) px2rem(4px) px2rem(10px);
+    }
+}
+
+.activity-state {
+    display: block;
+    text-align: right;
+    color: #f00;
+    margin-right: px2rem(3px);
+    line-height: 2;
+}
+
+.activity-content {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+
+/* 我的活动 */
+
+.mine-activity-list {
+    a.item {
+        padding: 0 px2rem(10px);
+    }
+}
+
+// 观看历史
+.edit {
+    float: right;
+    font-size: 1em;
+    margin: px2rem(12px);
+}
+
+.media {
+    .choice-checkbox {
+        width: px2rem(20px);
+        height: px2rem(20px);
+        border-radius: px2rem(10px) !important;
+        background: #fff !important;
+        margin-top: px2rem(20px);
+        margin-right: px2rem(20px);
+        display: none;
+    }
+}
+
+// 底部按钮
+.watch-btns {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    bottom: 0;
+    padding: px2rem(20px) 0;
+    text-align: center;
+    div.del {
+        border-left: px2rem(1px) solid #979797;
+    }
+}
+
+// 首页搜索
+.index-search-wrap {
+    background: #f1f1f1;
+    border-bottom: px2rem(1px) solid #d8d7d7;
+    margin-bottom: px2rem(10px);
+}
+
+.index-search {
+    line-height: 5;
+    .search-input {
+        border: none;
+        border-radius: px2rem(6px);
+        padding: px2rem(12px) px2rem(8px);
+    }
+}
+
+// 媒体查询
+@media all and (max-width:360px) {
+    .resources-content {
+        .media-body {
+            width: px2rem(160px);
+        }
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>更多vip视频-图文-详情</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel='stylesheet' href='css/lib/video-js.css'>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+     <link rel='stylesheet' href='css/detail.css'>
+</head>
+<body>
+    <!-- 非vip  start-->
+    <!--<div class="mask mask-not-vip" style="display: block;">-->
+        <!--<a href="http://www.baidu.com" type="button" class="btn btn-lg btn-primary">付费</a>-->
+    <!--</div>-->
+    <!-- 非vip  end-->
+
+    <div class="curriculum">
+        <header>
+            <figure class="container">
+                <figcaption class="curriculum-title">课程详情</figcaption>
+                <span class="connection pull-right">
+                    <img src="images/ connection-1.png" alt="" class="img-responsive" />
+                </span>
+            </figure>
+        </header>
+        <!-- 课程详情 -->
+        <div class="course-wrap">
+            <!-- 课程标题 -->
+            <section class="course-bg">
+                <article class="container">
+                    <h5>教育大咖精彩演讲</h5>
+                    <time class="font-gray upload-date">上传时间： 2017-08-15</time>
+                    <small>阅读：150000</small>
+                    <b class="pull-right glyphicon glyphicon-star-empty start start-orange"></b>
+                </article>
+            </section>
+            <!-- 课程简介 -->
+            <div class="course-intro course-bg">
+                <div class="container">
+                    <article>
+                        <h4>教育大咖精彩演讲</h4>
+                        <p>教育大咖精彩演讲教育大咖精彩演讲教育大咖精彩演讲教育大咖精彩演讲教育大咖精彩演讲</p>
+                    </article>
+                </div>
+            </div>
+            <!-- 最新评论 -->
+            <div class="newest-comm course-bg">
+                <div class="container">
+                    <section class="item newest-comm">
+                        <h5 class="active">最新评论</h5>
+                        <ul class="media-list">
+                            <li class="media">
+                                <div class="media-left">
+                                    <img class="img-responsive img-round comm-img" src="images/collect.png" />
+                                </div>
+                                <div class="media-body">
+                                    <small class="font-gray">中国境内没有艾建国</small>
+                                    <p>会儿规划会儿，韩国护理，费IE</p>
+                                    <time class="font-gray" type="date">2018-07-25 20:46:49</time>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="media-left">
+                                    <img class="img-responsive img-round comm-img" src="images/collect.png" />
+                                </div>
+                                <div class="media-body">
+                                    <small class="font-gray">中国境内没有艾建国</small>
+                                    <p>会儿规划会儿，韩国护理，费IE</p>
+                                    <time class="font-gray" type="date">2018-07-25 20:46:49</time>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <!-- 发表评论 -->
+            <button class="btn btn-sm btn-info add-comment" type="submit">
+                发表评论
+            </button>
+        </div>
+    </div>
+    <!-- 填写评论弹框 -->
+    <dialog class="cpm-comment">
+        <div class="container">
+            <h5 class="title">评论一下</h5>
+            <textarea name="comment" class="comment-textarea" id="" cols="38" rows="6" placeholder="评论发表中..."></textarea>
+            <div class="container">
+                <div class="row">
+                    <button type="submit" class="col-md-6 col-xs-6 btn btn-default btn-sm cancel-btn">取消</button>
+                    <button type="button" class="col-md-6 col-xs-6 btn btn-default btn-sm submit-btn">发送</button>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <!-- 遮罩层 -->
+    <div class="mask"></div>
+    <!-- 填写评论 -->
+    <script>
+        $(".add-comment").click(() => {
+            $(".mask").show();
+            $(".cpm-comment").css('display', 'block');
+        });
+        $(".cancel-btn").click(() => {
+            $(".mask").hide();
+            $(".cpm-comment").hide();
+        })
+    </script>
+</body>
+
+</html>

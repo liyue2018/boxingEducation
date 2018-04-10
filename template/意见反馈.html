@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('inc/header-common-static.html',{"title":"设置-意见反馈","css_source":"<link rel='stylesheet' href='css/user-info.css'>"})
+
+<body>
+    @@include('inc/top-header-bar.html',{"topHeader_title":"意见反馈"})
+    <div class="opinion-content">
+        <div class="container">
+            <textarea name="opinion" id="opinion_textarea" cols="" rows="7" onPropertyChange="textCounter(upbook.words, 50)"
+             placeholder="请输入不少于10个字的描述……" autofocus></textarea>
+            <small class="num-account" id="num_count"><span>240</span>/240</small>
+            <button type="submit" class="btn btn-sm btn-info changeMobile-btn" role="button">提交</button>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $("#opinion_textarea").keyup(function(){
+                var len = $(this).val().length;
+                if(len > 239){
+                    $(this).val($(this).val().substring(0,240));
+                }
+                var num = 240 -len;
+                $("#num_count").text(num);
+            });
+        });
+    </script>
+</body>
+</html>

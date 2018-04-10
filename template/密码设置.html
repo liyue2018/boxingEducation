@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('inc/header-common-static.html',{"title":"设置-密码设置","css_source":"<link rel='stylesheet' href='css/user-info.css'>"})
+<body class="newPassword">
+    @@include('inc/top-header-bar.html',{"topHeader_title":"修改登录密码"})
+    <figure class="about-logo set-newPassword">
+        <figcaption>我们已发送&nbsp;
+            <span class="font-black">验证码</span>&nbsp;到您的手机<br/>
+        </figcaption>
+            <span class="font-black">188******88</span>
+    </figure>
+    <div class="container auth-code-wrap">
+        <div class="auth-code">
+            <label for="login_code" class="sr-only">验证码</label>
+            <input type="number" name="password" class="login-code" id="login_code" />
+        </div>
+    </div>
+    <small class="code-info">收不到验证码？<button style="color:#27a4f6">重发短信</button></small>
+</body>
+</html>

@@ -1,0 +1,214 @@
+@function px2rem($px) {
+    $rem: 37.5px;
+    @return ($px / $rem)+rem;
+}
+
+html {
+    height: 100%;
+}
+
+html,
+body {
+    background: #f1f1f1;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    color: #333;
+}
+
+a {
+    color: #333;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 主要内容 */
+
+.plate {
+    background: #fff;
+    margin: px2rem(20px) 0;
+    padding: px2rem(14px) px2rem(10px);
+}
+
+
+/* 底部导航条 */
+
+.footer-nav {
+    text-align: center;
+    padding: px2rem(8px) 0;
+    background: #fff;
+    z-index: 16;
+    a {
+        display: block;
+        width: 25%;
+        float: left;
+        color: #666;
+        span.glyphicon {
+            font-size: px2rem(18px);
+        }
+        &.active {
+            color: #ffa200;
+        }
+        .footer-nav-txt{
+            display: block;
+        }
+    }
+}
+
+
+/* 资源列表顶部搜索框 */
+
+.activities-nav {
+    color: #a0a0a0;
+    background: #fff;
+}
+
+.activities-nav .search-icon {
+    position: absolute;
+    top: px2rem(10px);
+    left: px2rem(10px);
+    font-size: 1.2em;
+}
+
+.activities-nav .search-input {
+    padding-left: px2rem(30px);
+}
+
+.activities-nav .activity-search {
+    position: relative;
+}
+
+// 带返回箭头的头部 
+.topHeader {
+    background: #fff;
+    padding: 10px 0;
+    display: none;
+    text-align: center;
+    .topHeader-title {
+        font-size: 18px;
+        font-weight: 300;
+        margin: 10px 0;
+        span.topHeader-left {
+            color: #999;
+        }
+    }
+}
+
+.detailPage-main-content .container {
+    padding-top: px2rem(18px);
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.course-intro .container img{
+    height: 100%;
+    width:100%
+}
+
+// 我要推广
+.popul-wrap {
+    height: 100%;
+    background: url('../images/popu-bg.png') no-repeat #876efd;
+    background-size: 100% 70%;
+    background-position: top left;
+    .popul-content {
+        position: absolute;
+        bottom: 3%;
+        left: 50%;
+        margin-left: px2rem(-100px);
+        text-align: center;
+        .qr-code-img {
+            width: 40%;
+            height: 40%;
+            margin: 0 px2rem(20px);
+        }
+        b {
+            display: block;
+            height: px2rem(120px);
+            width: px2rem(30px);
+            color: #fff;
+            font-weight: 700;
+            font-size: px2rem(20px);
+        }
+    }
+}
+
+.mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .4);
+    z-index: 16;
+    display: none;
+}
+.mask-not-vip{
+    display:block;
+    background: rgba(0, 0, 0, 0.96) !important;
+    text-align:center;
+    a[type="button"]{
+        position:absolute;
+        top: 47%;
+        left:43%;
+    }
+}
+
+.pop-close{
+    position: absolute;
+    width: px2rem(18px);
+    height: px2rem(18px);
+    background: rgba(0,0,0,.4);
+    border-radius: 50%;
+    color: #fff;
+    right: px2rem(12px);
+    top: px2rem(10px);
+    cursor: pointer;
+}
+
+.mask-cover{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 3;
+}
+.pop-window{
+    position: absolute;
+    width: px2rem(240px);
+    height: px2rem(120px);
+    padding: px2rem(30px) px2rem(20px);
+    margin-top: 44%;
+    left: 50%;
+    margin-left: px2rem(-120px);
+    background: #fff;
+    border-radius: px2rem(18px);
+    text-align: center;
+}
+.upgrade{
+    display: inline-block;
+    padding: px2rem(2px) px2rem(8px);
+    background: #222;
+    color: #fff;
+    border-radius: px2rem(10px);
+    text-decoration: none;
+    font-size: px2rem(12px);
+    margin-top: px2rem(10px);
+}

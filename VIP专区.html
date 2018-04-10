@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vip专区</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel='stylesheet' href='css/lib/video-js.css'>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+     <link rel='stylesheet' href='css/detail.css'>
+</head>
+<body>
+
+<!-- 升级提示 start -->
+<div class="mask-cover" style="display: none;">
+    <div class="pop-window">
+        <a class="pop-close">x</a >
+        <p>您当前等级无法查看<br />请升级会员</p >
+        <a href=" " class="upgrade">立即升级</a >
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('.pop-close').click(function(){
+            $('.mask-cover').hide();
+        });
+    })
+    $(document).ready(function(){
+        $('.upgrade-vip').click(function(){
+            $('.mask-cover').show();
+        });
+    })
+</script>
+<!--升级提示 end-->
+
+
+    <div class="vip-prefecture">
+        <header>
+            <div class="container">
+                <h3 class="vip-prefecture-title">
+                    VIP专区
+                    <button class="connection pull-right">
+                        <img src="images/ connection-1.png" alt="" class="img-responsive img-circle" />
+                    </button>
+                </h3>
+            </div>
+        </header>
+        <!-- 选项卡 -->
+       <section>
+            <ul class="vip-tabs list-unstyled" role="tablist">
+                <li role="presentation" class="item pull-left active">
+                    <a href="#video" data-toggle="tab">视频</a>
+                </li>
+                <li role="presentation" class="item pull-left">
+                    <a href="#audio" data-toggle="tab">音频</a>
+                </li>
+                <li role="presentation" class="item pull-left">
+                    <a href="#imageText" data-toggle="tab">图文</a>
+                </li>
+            </ul>
+            <div class="vip-content">
+                <div class="tab-content">
+                    <!-- 视频区内容 -->
+                    <section class="tab-pane active" id="video">
+                        <a href="javascript:void(0);" class="upgrade-vip">
+                            <figure class="media">
+                                <figcaption class="pull-left">
+                                    <img src="http://fpoimg.com/120x90" alt="" class="img-responsive" />
+                                </figcaption>
+                                <div class="media-body">
+                                    <h5>教育叫打卡精彩眼睛</h5>
+                                    <time class="date">时间：2018.01.01</time>
+                                    <small class="font-gray">播放次数：555555</small>
+                                </div>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="media">
+                                <figcaption class="pull-left">
+                                    <img src="http://fpoimg.com/120x90" alt="" class="img-responsive" />
+                                </figcaption>
+                                <div class="media-body">
+                                    <h5>教育叫打卡精彩眼睛</h5>
+                                    <time class="date">时间：2018.01.01</time>
+                                    <small class="font-gray">播放次数：555555</small>
+                                </div>
+                                <div class="encrypt">
+                                    <img src="images/encrypt.png" class="encrypt-img img-responsive" />
+                                </div>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="media">
+                                <figcaption class="pull-left">
+                                    <img src="http://fpoimg.com/120x90" alt="" class="img-responsive" />
+                                </figcaption>
+                                <div class="media-body">
+                                    <h5>教育叫打卡精彩眼睛</h5>
+                                    <time class="date">时间：2018.01.01</time>
+                                    <small class="font-gray">播放次数：555555</small>
+                                </div>
+                                <div class="encrypt">
+                                    <img src="images/vip.png" class="encrypt-img img-responsive" />
+                                </div>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="media">
+                                <figcaption class="pull-left">
+                                    <img src="http://fpoimg.com/120x90" alt="" class="img-responsive" />
+                                </figcaption>
+                                <div class="media-body">
+                                    <h5>教育叫打卡精彩眼睛</h5>
+                                    <time class="date">时间：2018.01.01</time>
+                                    <small class="font-gray">播放次数：555555</small>
+                                </div>
+                                <div class="encrypt">
+                                    <img src="images/svip.png" class="encrypt-img img-responsive" />
+                                </div>
+                            </figure>
+                        </a>
+                    </section>
+                    <!-- 音频区内容 -->
+                    <section class="tab-pane" id="audio">
+                        <a href="#">
+                            <figure class="media">
+                                <figcaption class="pull-left">
+                                    <img src="http://fpoimg.com/120x90" alt="" class="img-responsive" />
+                                </figcaption>
+                                <div class="media-body">
+                                    <h5>教育叫打卡精彩眼睛</h5>
+                                    <time class="date">时间：2018.01.01</time>
+                                    <small class="font-gray">播放次数：555555</small>
+                                </div>
+                            </figure>
+                        </a>
+                        <a href="#">
+                            <figure class="media">
+                                <figcaption class="pull-left">
+                                    <img src="http://fpoimg.com/120x90" alt="" class="img-responsive" />
+                                </figcaption>
+                                <div class="media-body">
+                                    <h5>教育叫打卡精彩眼睛</h5>
+                                    <time class="date">时间：2018.01.01</time>
+                                    <small class="font-gray">播放次数：555555</small>
+                                </div>
+                                <div class="encrypt">
+                                    <img src="images/encrypt.png" class="encrypt-img img-responsive" />
+                                </div>
+                            </figure>
+                        </a>
+                    </section>
+                    <!-- 图文区内容 -->
+                    <section class="tab-pane media-list" id="imageText">
+                        <a href="#">
+                            <figure class="media">
+                                <figcaption class="pull-left">
+                                    <img src="http://fpoimg.com/120x90" alt="" class="img-responsive" />
+                                </figcaption>
+                                <div class="media-body image-text">
+                                    <h5>教育叫打卡精彩眼睛</h5>
+                                    <p class="detail-txt">教育叫打卡精彩眼睛教育叫打卡打卡精彩眼睛教育叫打卡打教育叫打卡精彩眼睛教育叫打卡打卡精彩眼睛教育叫打卡打</p>
+                                    <time class="font-gray pull-right">2018.01.01</time>
+                                </div>
+                            </figure>
+                        </a>
+                    </section>
+                </div>
+            </div>
+       </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,450 @@
+//px转换rem
+@function px2rem($px) {
+    $rem: 37.5px;
+    @return ($px / $rem)+rem;
+}
+
+.userInfo {
+    background: #fff;
+    .btn-exit {
+        background: #f39800;
+        padding: px2rem(3px) px2rem(40px);
+        margin-left: 34%;
+    }
+}
+
+.userInfo-list {
+    .list-group-item {
+        border-width: 0 0 px2rem(1px) 0;
+        border-color: #f1f1f1;
+        margin: px2rem(8px) 0;
+        overflow: hidden;
+        b {
+            line-height: 2;
+        }
+        &:last-child {
+            border: 0;
+        }
+        input {
+            text-align: right;
+            color: #4e4e4e;
+        }
+        select {
+            color: #4e4e4e;
+            margin-left: px2rem(10px);
+        }
+        span {
+            margin-left: px2rem(32px);
+        }
+        .changeInput {
+            text-align: left;
+            width: 80%;
+            padding: px2rem(4px);
+            color: #999;
+        }
+        .login-input {
+            width: 80%;
+            text-align: left;
+            padding: px2rem(6px) 0 px2rem(6px) px2rem(20px);
+            ;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+// 我的-会员
+.member {
+    .userInfo-bg {
+        position: relative;
+        height: px2rem(180px);
+        text-align: center;
+        background: url("../images/mine-bg.png") no-repeat top left;
+        background-size: 100% 100%;
+        .set {
+            position: absolute;
+            right: px2rem(30px);
+            top: px2rem(20px);
+            .set-icon {
+                font-size: px2rem(26px);
+                color: rgb(133, 132, 132);
+                display: none;
+            }
+            .set-img {
+                width: px2rem(30px);
+                height: px2rem(30px);
+            }
+        }
+    }
+    .person-info {
+        width: px2rem(200px);
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        margin-left: px2rem(-100px);
+        small.font-red {
+            color: #ff3000;
+        }
+    }
+}
+
+.circle-border {
+    position: relative;
+    width: px2rem(70px);
+    left: 50%;
+    margin-left: px2rem(-30px);
+    margin-bottom: px2rem(6px);
+    .vip-icon {
+        position: absolute;
+        width: px2rem(26px);
+        height: px2rem(26px);
+        top: px2rem(-8px);
+        right: px2rem(-5px);
+    }
+}
+
+.person-img {
+    .img-circle {
+        width: px2rem(70px);
+        height: px2rem(70px);
+    }
+}
+
+.userInfo-list {
+    input {
+        padding-right: px2rem(6px);
+    }
+}
+
+//表单验证
+input.mobile {
+    display: inline-block;
+    width: 60%;
+}
+
+.mobile-error,
+.mobile-success,
+.name-error,
+.name-success {
+    display: none;
+    float: right;
+    padding: px2rem(6px);
+    margin: 0;
+}
+
+// 我的项目
+.mine-items {
+    background: #fff;
+    border-radius: px2rem(6px);
+    padding-bottom: px2rem(20px);
+    margin: px2rem(10px) px2rem(10px) px2rem(100px);
+    h4 {
+        border-bottom: px2rem(1px) solid #f1f1f1;
+        padding: px2rem(6px) 0 px2rem(10px);
+        font-size: 1.4em;
+        font-weight: normal;
+    }
+}
+
+.project {
+    .project-item {
+        margin: px2rem(10px) 0;
+        text-align: center;
+        line-height: 1;
+        .project-item-img {
+            width: px2rem(30px);
+            height: px2rem(30px);
+            margin: 0 auto;
+        }
+        .project-item-icon {
+            font-size: px2rem(28px);
+            color: #999;
+            display: none;
+        }
+    }
+}
+
+// 我的收益
+.profits-content {
+    padding: px2rem(10px) px2rem(20px);
+    background: #fff;
+    text-align: center;
+    line-height: 2;
+    div.col-xs-3 {
+        padding: 0 px2rem(10px);
+        span {
+            color: #f39800;
+        }
+    }
+}
+
+.profit {
+    margin-top: px2rem(20px);
+    text-align: center;
+    .btn-profit {
+        background: #27a4f6;
+        padding: px2rem(6px) px2rem(50px);
+        border-radius: 0;
+    }
+}
+
+// 我的收益-提现
+.mine-profits {
+    .form-group {
+        background: #fff;
+    }
+    .profits-input {
+        border: none;
+        width: 90%;
+        margin-left: px2rem(4px);
+        box-shadow: none;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.surplus {
+    text-align: center;
+    font-size: px2rem(18px);
+    line-height: 1.4;
+    span.txt {
+        font-size: px2rem(14px);
+        color: #ffa200;
+    }
+}
+
+.profits-info {
+    padding: px2rem(10px) px2rem(16px);
+    background: #fff;
+    margin-top: px2rem(-14px);
+}
+
+.wechat-icon {
+    display: inline-block;
+    width: px2rem(20px);
+    height: px2rem(20px);
+    vertical-align: middle;
+}
+
+// 会员中心
+.member-center {
+    figure {
+        background: #fff;
+        padding: px2rem(8px) px2rem(15px);
+        figcaption {
+            margin: 0;
+            line-height: 3;
+        }
+    }
+    hr {
+        height: px2rem(12px);
+        background: #f1f1f1;
+        margin: 0;
+    }
+}
+
+.member-types {
+    background: #fff;
+}
+
+dl.ordinary-member {
+    background: #fff;
+    margin-bottom: px2rem(24px);
+    list-style-position: inside;
+    padding-left: px2rem(10px);
+    dt {
+        font-weight: normal;
+    }
+    dd {
+        border-bottom: px2rem(1px) solid #f1f1f1;
+        line-height: 2;
+        position: relative;
+        padding-left: px2rem(12px);
+        &::before {
+            content: '';
+            width: px2rem(4px);
+            height: px2rem(4px);
+            background: #ff3000;
+            border-radius: 50%;
+            position: absolute;
+            top: px2rem(12px);
+            left: 0;
+        }
+    }
+}
+
+p.not-member {
+    text-align: center;
+    background: #fff;
+    border-top: px2rem(1px) solid #f1f1f1;
+    padding: px2rem(8px) 0;
+}
+
+// 客服中心
+.call-center {
+    margin: px2rem(10px) 0;
+    background: #fff;
+    line-height: 3;
+    span {
+        color: #999;
+    }
+    .call-phone {
+        width: px2rem(17px);
+        height: px2rem(17px);
+        margin-top: px2rem(12px);
+        margin-left: px2rem(8px);
+    }
+}
+
+// 我的设置
+.userInfo-list {
+    .no-border {
+        margin-bottom: px2rem(8px);
+        border-bottom-width: 0;
+    }
+}
+
+.exit-btn {
+    margin-top: px2rem(20px);
+    background: #fff;
+    text-align: center;
+    padding: px2rem(6px) 0;
+}
+
+// 求助反馈
+.help-back {
+    background: #fff;
+}
+
+// 设置-关于
+figure.about-logo {
+    background: #f1f1f1;
+    text-align: center;
+    color: #999;
+    padding: px2rem(12px) 0;
+    figcaption {
+        img {
+            width: px2rem(60px);
+            height: px2rem(70px);
+            margin: px2rem(4px) auto;
+        }
+    }
+}
+
+// 设置账号切换
+.accountSwitch .list-group-item {
+    margin: 0;
+    span.glyphicon-ok {
+        color: rgb(6, 185, 6);
+    }
+}
+
+// 更换手机号
+.change-mobile {
+    border: 0;
+    margin-top: px2rem(6px);
+    a {
+        color: #999;
+    }
+}
+
+.changeMobile-btn {
+    background: #27a4f6;
+    width: 100%;
+    text-align: center;
+    margin: px2rem(20px) auto;
+    font-size: px2rem(14px);
+}
+
+.changeMobile-txt {
+    color: #999;
+}
+
+// 设置新密码
+.new-password {
+    margin: px2rem(20px) 0 px2rem(10px);
+    text-align: center;
+}
+
+.new-password-input {
+    width: 100%;
+    .input-control {
+        width: 100%;
+        text-align: center;
+        border: none;
+        padding: px2rem(8px) 0;
+    }
+}
+
+// 设置密码
+.newPassword {
+    background: #fff;
+    .set-newPassword {
+        background: #fff;
+        span.font-black {
+            color: #333;
+        }
+    }
+}
+
+.auth-code-wrap {
+    padding: 0 px2rem(20px);
+    text-align: center;
+    .auth-code {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+
+.login-code {
+    border: none;
+    height: px2rem(40px);
+    width: 100%;
+    border-bottom: #27a4f6 px2rem(2px) solid;
+    text-align: center;
+    background: #fff;
+    &:focus {
+        outline: none;
+    }
+}
+
+.code-info {
+    display: block;
+    color: #999;
+    text-align: center;
+    margin: px2rem(20px) 0;
+}
+
+// 意见反馈
+.opinion-content {
+    margin-top: px2rem(16px);
+    textarea {
+        background: #fff;
+        border-radius: 6px;
+        width: 100%;
+        border: none;
+        padding: px2rem(12px);
+        resize: none;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.num-account {
+    position: absolute;
+    right: px2rem(28px);
+    margin-top: px2rem(-36px);
+    color: #999;
+}
+
+// 登录
+.font-blue {
+    color: #27a4f6;
+}
+
+.bg-gray {
+    background: #f1f1f1;
+}

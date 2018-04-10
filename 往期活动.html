@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>往期活动</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel='stylesheet' href='css/lib/video-js.css'>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+     <link rel='stylesheet' href='css/resource-list.css'>
+</head>
+<body>
+    <!-- 顶部搜索框 -->
+    <div class="activities-nav">
+    <div class="container">
+        <form class="navbar-form">
+            <div class="form-group activity-search">
+                <span class="glyphicon glyphicon-search search-icon"></span>
+                <label class="sr-only">搜索</label>
+                <input type='text' class='form-control search-input' role='search' placeholder='搜索活动名称'/>
+            </div>
+        </form>
+    </div>
+</div>
+    <!-- 往期活动 -->
+    <div class="activisties">
+        <div class="activisties-tab">
+            <div class="container">
+                <ul class="row list-unstyled" role="tablist">
+                    <li role="presentation" class="col-xs-6 col-md-6 tabs-border active">
+                        <a href="#recently" class="tabs" aria-controls="messages" role="tab" data-toggle="tab">最近活动</a>
+                    </li>
+                    <li role="presentation" class="col-xs-6 col-md-6">
+                        <a href="#past" class="tabs" aria-controls="messages" role="tab" data-toggle="tab">往期活动</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content container">
+            <div role="tabpanel" class="tab-pane active row" id="recently">
+                <a href="#" class="col-md-6 col-xs-6">
+                    <figure class="tabs-figure">
+                        <img src="images/past.png" alt="图片" class="img-responsive" />
+                        <figcaption class="tabs-figcaption">
+                            <h5 class="activity-content">
+                                活动内容：XXXXXXXXXXXXXX
+                            </h5>
+                            <time class="activity-date">
+                                日期：2018年X月X年
+                            </time>
+                            <small class="activity-state">进行中</small>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="col-md-6 col-xs-6">
+                    <figure class="tabs-figure">
+                        <img src="images/past.png" alt="图片" class="img-responsive" />
+                        <figcaption class="tabs-figcaption">
+                            <h5 class="activity-content">
+                                活动内容：XXXXXXXXXXXXXX
+                            </h5>
+                            <time class="activity-date">
+                                日期：2018年X月X年
+                            </time>
+                            <small class="activity-state">进行中</small>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div role="tabpanel" class="tab-pane activisties-now row" id="past">
+                <a href="#" class="col-md-6 col-xs-6">
+                    <figure class="tabs-figure">
+                        <img src="images/past.png" alt="图片" class="img-responsive" />
+                        <figcaption class="tabs-figcaption">
+                            <h5 class="activity-content">
+                                活动内容：XXXXXXXXXXXXXX
+                            </h5>
+                            <time class="activity-date">
+                                日期：2018年X月X年
+                            </time>
+                            <small class="activity-state">已结束</small>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="col-md-6 col-xs-6">
+                    <figure class="tabs-figure">
+                        <img src="images/past.png" alt="图片" class="img-responsive" />
+                        <figcaption class="tabs-figcaption">
+                            <h5 class="activity-content">
+                                活动内容：XXXXXXXXXXXXXX
+                            </h5>
+                            <time class="activity-date">
+                                日期：2018年X月X年
+                            </time>
+                            <small class="activity-state">已结束</small>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 底部导航栏 -->
+    <nav class="navbr navbar-fixed-bottom footer-nav">
+    <div class="container">
+        <a href="./index.html" class="@@index-nav">
+            <span class="glyphicon glyphicon-home"></span>
+            <!-- <br/> -->
+            <span class="footer-nav-txt">首页</span>
+        </a>
+        <a href="./资源列表.html" class="@@zy-nav">
+            <span class="glyphicon glyphicon-briefcase"></span>
+            <!-- <br/> -->
+            <span class="footer-nav-txt">资源</span>
+        </a>
+        <a href="./往期活动.html" class="active">
+            <span class="glyphicon glyphicon-gift"></span>
+            <!-- <br/> -->
+            <span class="footer-nav-txt">活动</span>
+        </a>
+        <a href="./我的-会员.html" class="@@mine-nav">
+            <span class="glyphicon glyphicon-user"></span>
+            <!-- <br/> -->
+            <span class="footer-nav-txt">我的</span>
+        </a>
+    </div>
+</nav>
+</body>
+</html>

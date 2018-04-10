@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('inc/header-common-static.html',{"title":"设置-账号管理-账号切换-新增账号","css_source":"<link rel='stylesheet' href='css/user-info.css'>"})
+
+<body>
+    @@include('inc/top-header-bar.html',{"topHeader_title":"登录"})
+    <figure class="about-logo">
+        <figcaption>
+            <img src="images/logo.png" alt="" class="logo-img img-responsive" />
+        </figcaption>
+        <small>版本号 1.0</small>
+    </figure>
+    <div class="userInfo">
+        <div class="container">
+            <!-- 有箭头的版本 -->
+            <form class="userInfo-list">
+                <div class="list-group-item form-group">
+                    <label>账号</label>
+                    <input type="number" id="mobile" name="mobile" class="login-input" required="required" maxlength="11" minlength="11"
+                        pattern="/^1[34578]\d{9}$/" title="电话号只能是11位的整数" placeholder="手机号码" onblur="checkMobile(this.value)" />
+                    <span class="mobile-error alert alert-danger pull-left">手机号码填写有误，慎重填写</span>
+                    <span class="mobile-success alert alert-success pull-left">手机号码形式正确</span>
+                </div>
+                <div class="list-group-item form-group" style="margin-bottom: 0;">
+                    <label>密码</label>
+                    <input type="password" placeholder="请输入登录密码" class="login-input" />
+                </div>
+                <div class="form-group">
+                    <div class="container">
+                        <button class="btn btn-sm btn-info changeMobile-btn" type="submit" role="submit">登录</button>
+                        <span class="font-blue">短信验证登录</span>
+                        <a href="#" class="font-blue pull-right">忘记密码</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>  
+        //对悬浮窗的设置  
+        function validatelt(inputelement, err) {
+            if (inputelement.validity.patternMismatch) {
+                inputelement.setCustomValidity(err);
+
+            } else {
+                inputelement.setCustomValidity("");
+                return true;
+            }
+        }
+        // 校验表单
+
+        //验证手机号码合法性
+
+        function checkMobile() {
+            var mobile = $('#mobile').val();
+            if (!(/^1[34578]\d{9}$/.test(mobile))) {
+                $(".mobile-error").css('display', 'inline-block');
+                return false;
+            }
+            else {
+                $(".mobile-error").hide();
+                $(".mobile-success").show();
+                setTimeout(() => {
+                    $(".mobile-success").hide();
+                    return true;
+                }, 1000);
+                return true;
+            }
+
+        }
+
+        function checkName() {
+            var name = $("#name").val();
+            if (!/^[\u4e00-\u9fa5]{2,}$/.test(name)) {
+                $(".name-error").css('display', 'inline-block');
+                return false;
+            }
+            else {
+                $(".name-error").hide();
+                $(".name-success").show()
+                setTimeout(() => {
+                    $(".name-success").hide();
+                    return true;
+                }, 1000);
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

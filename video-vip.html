@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>视频详情页-会员观看</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel='stylesheet' href='css/lib/video-js.css'>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+     <link rel='stylesheet' href='css/detail.css'>
+</head>
+<script src="js/video.min.js"></script>
+<body>
+    <header class="video">
+        <div class="jumbotron">
+            <div class="play-btn" id="play_btn">
+                <button class="btn btn-default btn-xs btn-play" href="#" role="button" style="">会员观看</button>
+            </div>
+            <!-- 不支持html5的浏览中使用flash播放视频文件 -->
+            <script>
+                videojs.options.flash.swf = "video-js.swf";
+            </script>
+            <video id="boxin_video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="" height="260" poster=""
+                data-setup="{}">
+                <source src="示例.mp4" type='video/mp4' />
+                <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track>
+                <!-- Tracks need an ending tag thanks to IE9 -->
+                <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track>
+                <!-- Tracks need an ending tag thanks to IE9 -->
+            </video>
+        </div>
+    </header>
+    <!-- 选项卡 -->
+    <section class="video-tabs">
+        <div class="container">
+            <b class="glyphicon glyphicon-star-empty star orange"></b>
+            <ul class="list-unstyled row" id="videoTabs">
+                <li class="active col-xs-6 nav-tabs-item">
+                    <a href="#brief" data-toggle="tab">
+                        <span>简介</span>
+                    </a>
+                </li>
+                <li class="col-xs-6 nav-tabs-item">
+                    <a href="#comment" data-toggle="tab">
+                        <span>评论</span>
+                    </a>
+                </li>
+            </ul>
+                        
+            <!-- 选项卡内容 -->
+            <div id="videoTabContent" class="tab-content">
+                <!-- 简介 -->
+                <!-- 简介内容 -->
+                <figure id="brief" class="tab-pane active">
+                    <div class="video-brief">
+                <div class="container">
+                    <article>
+                    <p>
+                        本是华盛顿看啥都看见好看借记卡客家话爱是可敬的看见看见后阿萨德会看见爱上科技等哈会计师抠脚大汉看到哈市的空   间看见到
+                    本是华盛顿看啥都看见好看借记卡客家话爱是可敬的看见看见后阿萨德会看见爱上科技等哈会计师抠脚大汉看到哈市的空   间看见到
+                    本是华盛顿看啥都看见好看借记卡客家话爱是可敬的看见看见后阿萨德会看见爱上科技等哈会计师抠脚大汉看到哈市的空   间看见到
+                    本是华盛顿看啥都看见好看借记卡客家话爱是可敬的看见看见后阿萨德会看见爱上科技等哈会计师抠脚大汉看到哈市的空   间看见到
+                    本是华盛顿看啥都看见好看借记卡客家话爱是可敬的看见看见后阿萨德会看见爱上科技等哈会计师抠脚大汉看到哈市的空   间看见到
+                    本是华盛顿看啥都看见好看借记卡客家话爱是可敬的看见看见后阿萨德会看见爱上科技等哈会计师抠脚大汉看到哈市的空   间看见到
+                        </p>
+                        <a class="glyph-icon glyphicon-menu-up" style="display: none"></a>
+                        <a class="glyph-icon glyphicon-menu-down"></a>
+                        
+                    </article>
+                </div>
+            </div>
+        <script>
+            $(document).ready(function(){
+                $(".glyphicon-menu-down").click(function(){
+                    console.log('good');
+                    $(".container article").addClass('on');
+                    $(this).hide();
+                    $('.glyphicon-menu-up').show();
+                });
+                });
+
+             $(document).ready(function(){
+                $(".glyphicon-menu-up").click(function(){
+                    console.log('good');
+                    $(".container article").removeClass('on');
+                    $(this).hide();
+                    $('.glyphicon-menu-down').show();
+                });
+                });
+        </script>  
+            <div style="clear: both;"></div>
+                    <figcaption class="ticket-title">
+                        <span class="titleBar">目录摘要</span>
+                        <small class="num">共2节</small>
+                    </figcaption>
+                    <ul class="list-unstyled brief-list">
+                        <li class="item">
+                            <a href="#" class="active">第一节打卡讲师精彩演讲</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">第一节打卡讲师精彩演讲</a>
+                        </li>
+                    </ul>
+                </figure>
+                <div id="comment" class="tab-pane comment">
+                    <div class="container">
+                        <!-- 精品评论 -->
+                        <section class="item">
+                            <h5 class="active">精品评论</h5>
+                            <ul class="media-list">
+                                <li class="media">
+                                    <div class="media-left">
+                                        <img class="img-responsive img-round comm-img" src="images/collect.png" />
+                                    </div>
+                                    <div class="media-body">
+                                        <small class="font-gray">中国境内没有艾建国</small>
+                                        <p>会儿规划会儿，韩国护理，费IE</p>
+                                        <time class="font-gray" type="date">2018-07-25 20:46:49</time>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <div class="media-left">
+                                        <img class="img-responsive img-round comm-img" src="images/collect.png" />
+                                    </div>
+                                    <div class="media-body">
+                                        <small class="font-gray">中国境内没有艾建国</small>
+                                        <p>会儿规划会儿，韩国护理，费IE</p>
+                                        <time class="font-gray" type="date">2018-07-25 20:46:49</time>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                        <!-- 最新评论 -->
+                        <section class="item newest-comm">
+                            <h5 class="active">最新评论</h5>
+                            <ul class="media-list">
+                                <li class="media">
+                                    <div class="media-left">
+                                        <img class="img-responsive img-round comm-img" src="images/collect.png" />
+                                    </div>
+                                    <div class="media-body">
+                                        <small class="font-gray">中国境内没有艾建国</small>
+                                        <p>会儿规划会儿，韩国护理，费IE</p>
+                                        <time class="font-gray" type="date">2018-07-25 20:46:49</time>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <div class="media-left">
+                                        <img class="img-responsive img-round comm-img" src="images/collect.png" />
+                                    </div>
+                                    <div class="media-body">
+                                        <small class="font-gray">中国境内没有艾建国</small>
+                                        <p>会儿规划会儿，韩国护理，费IE</p>
+                                        <time class="font-gray" type="date">2018-07-25 20:46:49</time>
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <a href="#" type="type" class="btn btn-sm btn-primary submit-comment">发表评论...
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 填写评论 -->
+    <dialog class="cpm-comment">
+        <div class="container">
+            <h5 class="title">评论一下</h5>
+            <textarea name="comment" class="comment-textarea" id="" cols="30" rows="6" placeholder="评论发表中..."></textarea>
+            <div class="container">
+                <div class="row">
+                    <button type="submit" class="col-md-6 col-xs-6 btn btn-default btn-sm cancel-btn">取消</button>
+                    <button type="button" class="col-md-6 col-xs-6 btn btn-default btn-sm submit-btn">发送</button>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <!-- 弹出填写密码框 -->
+    <div class="write-password">
+        <div class="container">
+            <form action="" method="">
+                <div class="form-group">
+                    <label for="user_password">
+                        密码
+                    </label>
+                    <input type="password" name="user-password" class="user-password" id="user_password" placeholder="请输入密码" />
+                </div>
+                <button type="submit" class="ok-btn btn btn-sm btn-primary">确&nbsp;定</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- 遮罩层 -->
+    <div class="mask"></div>
+    
+    <script>
+        // 填写评论
+        $(".submit-comment").click(() => {
+            $(".mask").show();
+            $(".cpm-comment").css('display', 'block');
+        });
+        $(".cancel-btn").click(() => {
+            $(".mask").hide();
+            $(".cpm-comment").hide();
+        })
+
+        // 弹出密码框
+
+        $('#play_btn').click(() =>{
+            $(".mask").show();
+            $('.write-password').show();
+        })
+
+        $('.star').click(() => {
+            console.log('hello')
+        })
+    </script>
+</body>
+
+</html>

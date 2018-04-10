@@ -1,0 +1,450 @@
+.userInfo {
+  background: #fff;
+}
+
+.userInfo .btn-exit {
+  background: #f39800;
+  padding: 0.08rem 1.06667rem;
+  margin-left: 34%;
+}
+
+.userInfo-list .list-group-item {
+  border-width: 0 0 0.02667rem 0;
+  border-color: #f1f1f1;
+  margin: 0.21333rem 0;
+  overflow: hidden;
+}
+
+.userInfo-list .list-group-item b {
+  line-height: 2;
+}
+
+.userInfo-list .list-group-item:last-child {
+  border: 0;
+}
+
+.userInfo-list .list-group-item input {
+  text-align: right;
+  color: #4e4e4e;
+}
+
+.userInfo-list .list-group-item select {
+  color: #4e4e4e;
+  margin-left: 0.26667rem;
+}
+
+.userInfo-list .list-group-item span {
+  margin-left: 0.85333rem;
+}
+
+.userInfo-list .list-group-item .changeInput {
+  text-align: left;
+  width: 80%;
+  padding: 0.10667rem;
+  color: #999;
+}
+
+.userInfo-list .list-group-item .login-input {
+  width: 80%;
+  text-align: left;
+  padding: 0.16rem 0 0.16rem 0.53333rem;
+}
+
+.userInfo-list .list-group-item .login-input:focus {
+  outline: none;
+}
+
+.member .userInfo-bg {
+  position: relative;
+  height: 4.8rem;
+  text-align: center;
+  background: url("../images/mine-bg.png") no-repeat top left;
+  background-size: 100% 100%;
+}
+
+.member .userInfo-bg .set {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.53333rem;
+}
+
+.member .userInfo-bg .set .set-icon {
+  font-size: 0.69333rem;
+  color: #858484;
+  display: none;
+}
+
+.member .userInfo-bg .set .set-img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.member .person-info {
+  width: 5.33333rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -2.66667rem;
+}
+
+.member .person-info small.font-red {
+  color: #ff3000;
+}
+
+.circle-border {
+  position: relative;
+  width: 1.86667rem;
+  left: 50%;
+  margin-left: -0.8rem;
+  margin-bottom: 0.16rem;
+}
+
+.circle-border .vip-icon {
+  position: absolute;
+  width: 0.69333rem;
+  height: 0.69333rem;
+  top: -0.21333rem;
+  right: -0.13333rem;
+}
+
+.person-img .img-circle {
+  width: 1.86667rem;
+  height: 1.86667rem;
+}
+
+.userInfo-list input {
+  padding-right: 0.16rem;
+}
+
+input.mobile {
+  display: inline-block;
+  width: 60%;
+}
+
+.mobile-error,
+.mobile-success,
+.name-error,
+.name-success {
+  display: none;
+  float: right;
+  padding: 0.16rem;
+  margin: 0;
+}
+
+.mine-items {
+  background: #fff;
+  border-radius: 0.16rem;
+  padding-bottom: 0.53333rem;
+  margin: 0.26667rem 0.26667rem 2.66667rem;
+}
+
+.mine-items h4 {
+  border-bottom: 0.02667rem solid #f1f1f1;
+  padding: 0.16rem 0 0.26667rem;
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+.project .project-item {
+  margin: 0.26667rem 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.project .project-item .project-item-img {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0 auto;
+}
+
+.project .project-item .project-item-icon {
+  font-size: 0.74667rem;
+  color: #999;
+  display: none;
+}
+
+.profits-content {
+  padding: 0.26667rem 0.53333rem;
+  background: #fff;
+  text-align: center;
+  line-height: 2;
+}
+
+.profits-content div.col-xs-3 {
+  padding: 0 0.26667rem;
+}
+
+.profits-content div.col-xs-3 span {
+  color: #f39800;
+}
+
+.profit {
+  margin-top: 0.53333rem;
+  text-align: center;
+}
+
+.profit .btn-profit {
+  background: #27a4f6;
+  padding: 0.16rem 1.33333rem;
+  border-radius: 0;
+}
+
+.mine-profits .form-group {
+  background: #fff;
+}
+
+.mine-profits .profits-input {
+  border: none;
+  width: 90%;
+  margin-left: 0.10667rem;
+  box-shadow: none;
+}
+
+.mine-profits .profits-input:focus {
+  outline: none;
+}
+
+.surplus {
+  text-align: center;
+  font-size: 0.48rem;
+  line-height: 1.4;
+}
+
+.surplus span.txt {
+  font-size: 0.37333rem;
+  color: #ffa200;
+}
+
+.profits-info {
+  padding: 0.26667rem 0.42667rem;
+  background: #fff;
+  margin-top: -0.37333rem;
+}
+
+.wechat-icon {
+  display: inline-block;
+  width: 0.53333rem;
+  height: 0.53333rem;
+  vertical-align: middle;
+}
+
+.member-center figure {
+  background: #fff;
+  padding: 0.21333rem 0.4rem;
+}
+
+.member-center figure figcaption {
+  margin: 0;
+  line-height: 3;
+}
+
+.member-center hr {
+  height: 0.32rem;
+  background: #f1f1f1;
+  margin: 0;
+}
+
+.member-types {
+  background: #fff;
+}
+
+dl.ordinary-member {
+  background: #fff;
+  margin-bottom: 0.64rem;
+  list-style-position: inside;
+  padding-left: 0.26667rem;
+}
+
+dl.ordinary-member dt {
+  font-weight: normal;
+}
+
+dl.ordinary-member dd {
+  border-bottom: 0.02667rem solid #f1f1f1;
+  line-height: 2;
+  position: relative;
+  padding-left: 0.32rem;
+}
+
+dl.ordinary-member dd::before {
+  content: '';
+  width: 0.10667rem;
+  height: 0.10667rem;
+  background: #ff3000;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.32rem;
+  left: 0;
+}
+
+p.not-member {
+  text-align: center;
+  background: #fff;
+  border-top: 0.02667rem solid #f1f1f1;
+  padding: 0.21333rem 0;
+}
+
+.call-center {
+  margin: 0.26667rem 0;
+  background: #fff;
+  line-height: 3;
+}
+
+.call-center span {
+  color: #999;
+}
+
+.call-center .call-phone {
+  width: 0.45333rem;
+  height: 0.45333rem;
+  margin-top: 0.32rem;
+  margin-left: 0.21333rem;
+}
+
+.userInfo-list .no-border {
+  margin-bottom: 0.21333rem;
+  border-bottom-width: 0;
+}
+
+.exit-btn {
+  margin-top: 0.53333rem;
+  background: #fff;
+  text-align: center;
+  padding: 0.16rem 0;
+}
+
+.help-back {
+  background: #fff;
+}
+
+figure.about-logo {
+  background: #f1f1f1;
+  text-align: center;
+  color: #999;
+  padding: 0.32rem 0;
+}
+
+figure.about-logo figcaption img {
+  width: 1.6rem;
+  height: 1.86667rem;
+  margin: 0.10667rem auto;
+}
+
+.accountSwitch .list-group-item {
+  margin: 0;
+}
+
+.accountSwitch .list-group-item span.glyphicon-ok {
+  color: #06b906;
+}
+
+.change-mobile {
+  border: 0;
+  margin-top: 0.16rem;
+}
+
+.change-mobile a {
+  color: #999;
+}
+
+.changeMobile-btn {
+  background: #27a4f6;
+  width: 100%;
+  text-align: center;
+  margin: 0.53333rem auto;
+  font-size: 0.37333rem;
+}
+
+.changeMobile-txt {
+  color: #999;
+}
+
+.new-password {
+  margin: 0.53333rem 0 0.26667rem;
+  text-align: center;
+}
+
+.new-password-input {
+  width: 100%;
+}
+
+.new-password-input .input-control {
+  width: 100%;
+  text-align: center;
+  border: none;
+  padding: 0.21333rem 0;
+}
+
+.newPassword {
+  background: #fff;
+}
+
+.newPassword .set-newPassword {
+  background: #fff;
+}
+
+.newPassword .set-newPassword span.font-black {
+  color: #333;
+}
+
+.auth-code-wrap {
+  padding: 0 0.53333rem;
+  text-align: center;
+}
+
+.auth-code-wrap .auth-code {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.login-code {
+  border: none;
+  height: 1.06667rem;
+  width: 100%;
+  border-bottom: #27a4f6 0.05333rem solid;
+  text-align: center;
+  background: #fff;
+}
+
+.login-code:focus {
+  outline: none;
+}
+
+.code-info {
+  display: block;
+  color: #999;
+  text-align: center;
+  margin: 0.53333rem 0;
+}
+
+.opinion-content {
+  margin-top: 0.42667rem;
+}
+
+.opinion-content textarea {
+  background: #fff;
+  border-radius: 6px;
+  width: 100%;
+  border: none;
+  padding: 0.32rem;
+  resize: none;
+}
+
+.opinion-content textarea:focus {
+  outline: none;
+}
+
+.num-account {
+  position: absolute;
+  right: 0.74667rem;
+  margin-top: -0.96rem;
+  color: #999;
+}
+
+.font-blue {
+  color: #27a4f6;
+}
+
+.bg-gray {
+  background: #f1f1f1;
+}

@@ -1,0 +1,216 @@
+@charset "UTF-8";
+html {
+  height: 100%;
+}
+
+html,
+body {
+  background: #f1f1f1;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  color: #333;
+}
+
+a {
+  color: #333;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+/* 主要内容 */
+.plate {
+  background: #fff;
+  margin: 0.53333rem 0;
+  padding: 0.37333rem 0.26667rem;
+}
+
+/* 底部导航条 */
+.footer-nav {
+  text-align: center;
+  padding: 0.21333rem 0;
+  background: #fff;
+  z-index: 16;
+}
+
+.footer-nav a {
+  display: block;
+  width: 25%;
+  float: left;
+  color: #666;
+}
+
+.footer-nav a span.glyphicon {
+  font-size: 0.48rem;
+}
+
+.footer-nav a.active {
+  color: #ffa200;
+}
+
+.footer-nav a .footer-nav-txt {
+  display: block;
+}
+
+/* 资源列表顶部搜索框 */
+.activities-nav {
+  color: #a0a0a0;
+  background: #fff;
+}
+
+.activities-nav .search-icon {
+  position: absolute;
+  top: 0.26667rem;
+  left: 0.26667rem;
+  font-size: 1.2em;
+}
+
+.activities-nav .search-input {
+  padding-left: 0.8rem;
+}
+
+.activities-nav .activity-search {
+  position: relative;
+}
+
+.topHeader {
+  background: #fff;
+  padding: 10px 0;
+  display: none;
+  text-align: center;
+}
+
+.topHeader .topHeader-title {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.topHeader .topHeader-title span.topHeader-left {
+  color: #999;
+}
+
+.detailPage-main-content .container {
+  padding-top: 0.48rem;
+}
+
+.detailPage-main-content .container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.course-intro .container img {
+  height: 100%;
+  width: 100%;
+}
+
+.popul-wrap {
+  height: 100%;
+  background: url("../images/popu-bg.png") no-repeat #876efd;
+  background-size: 100% 70%;
+  background-position: top left;
+}
+
+.popul-wrap .popul-content {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  margin-left: -2.66667rem;
+  text-align: center;
+}
+
+.popul-wrap .popul-content .qr-code-img {
+  width: 40%;
+  height: 40%;
+  margin: 0 0.53333rem;
+}
+
+.popul-wrap .popul-content b {
+  display: block;
+  height: 3.2rem;
+  width: 0.8rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.53333rem;
+}
+
+.mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 16;
+  display: none;
+}
+
+.mask-not-vip {
+  display: block;
+  background: rgba(0, 0, 0, 0.96) !important;
+  text-align: center;
+}
+
+.mask-not-vip a[type="button"] {
+  position: absolute;
+  top: 47%;
+  left: 43%;
+}
+
+.pop-close {
+  position: absolute;
+  width: 0.48rem;
+  height: 0.48rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  color: #fff;
+  right: 0.32rem;
+  top: 0.26667rem;
+  cursor: pointer;
+}
+
+.mask-cover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+
+.pop-window {
+  position: absolute;
+  width: 6.4rem;
+  height: 3.2rem;
+  padding: 0.8rem 0.53333rem;
+  margin-top: 44%;
+  left: 50%;
+  margin-left: -3.2rem;
+  background: #fff;
+  border-radius: 0.48rem;
+  text-align: center;
+}
+
+.upgrade {
+  display: inline-block;
+  padding: 0.05333rem 0.21333rem;
+  background: #222;
+  color: #fff;
+  border-radius: 0.26667rem;
+  text-decoration: none;
+  font-size: 0.32rem;
+  margin-top: 0.26667rem;
+}

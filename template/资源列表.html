@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('inc/header-common-static.html',{"title":"资源列表","css_source":"<link rel='stylesheet' href='css/resource-list.css'>"})
+
+<body>
+    <!-- 顶部搜索框 -->
+    @@include('inc/top-search-input.html',{"input":"<input type='text' class='form-control search-input' role='search' placeholder='搜索资源名称' />"})
+    <!-- 资源列表 -->
+    <figure>
+        <figcaption class="container resourceList-title">资源列表</figcaption>
+        <div class="resourceList-content-item">
+            <a href="#" class="container">
+                <img src="images/file-icon.png" alt="文件夹图片" class="pull-left img-responsive resourceList-img" />
+                <h5>资源内容：基地科技读后感读后感</h5>
+            </a>
+        </div>
+    </figure>
+    <!-- 底部导航栏 -->
+    @@include('inc/footer-nav-bar.html',{"zy-nav":"active"})
+</body>
+</html>

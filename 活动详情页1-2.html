@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>活动详情页1-2</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel='stylesheet' href='css/lib/video-js.css'>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+     <link rel='stylesheet' href='css/detail.css'>
+</head>
+
+<body>
+    <!-- 票种信息 -->
+    <div class="ticket detail-plate">
+        <section class="container">
+            <h3 class="ticket-title">
+                <span>票种信息</span>
+            </h3>
+            <div class="ticket-content">
+                <div class="row">
+                    <b class="col-xs-12 info">活动时间</b>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <time>2018-01-01 21:45:45</time>
+                        &nbsp;~&nbsp;
+                        <time>2018-01-01 21:45:45</time>
+                    </div>
+                </div>
+                <div class="row">
+                    <b class="col-xs-12 info">票种名称</b>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        官方原价&nbsp;150&nbsp;/&nbsp;
+                        <span class="font-red">5折</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <b class="col-xs-3 info">单价</b>
+                    <b class="col-xs-5 info">数量</b>
+                    <b class="col-xs-3 info">小计</b>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 font-red price">
+                        ￥<span id="num_price" class="" >3.45</span>
+                    </div>
+                    <div class="col-xs-5 spinner" data-trigger="spinner" id="spinner">
+                        <a href="javascript:;" class="red-icon minus " id="click_minus">-</a>
+                        <input class="amount-input" data-spin="down" id="num_amount" type="number" value="1" data-step="1" />
+                        <a href="javascript:;" data-spin="up" class="red-icon add" id="click_plus">+</a>
+                    </div>
+                    <div class="col-xs-3 font-red">
+                        ￥<span id="num_total">3.45</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- 填写报名信息 -->
+    <div class="apply-info detail-plate">
+        <section class="container">
+            <h3 class="ticket-title">
+                <span>填写报名信息</span>
+            </h3>
+            <div class="ticket-content">
+                <form class="apply-form">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" class="form-control" required="required"
+                         minlength="2" pattern="[\u4e00-\u9fa5]{2,}" placeholder="姓名必须是中文，且长度不小于2"
+                          title="姓名必须是中文，且长度不小于2" onblur="checkName(this.value)" />
+                        <span class="name-error alert alert-danger">姓名形式有误，请重新填写</span>
+                        <!-- <span class="name-success alert alert-success">姓名填写正确</span> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">手机</label>
+                        <input type="number" id="mobile" name="mobile" class="form-control" required="required"
+                         maxlength="11" minlength="11" pattern="/^1[34578]\d{9}$/" title="电话号只能是11位的整数"
+                         placeholder="请填写手机号码的正确形式" onblur="checkMobile(this.value)" />
+                         <span class="mobile-error alert alert-danger">手机号码填写不正确</span>
+                         <!-- <span class="mobile-success alert alert-success">手机号码形式正确</span> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="name">备注</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <a href="./活动详情页1-3.html">
+                        <button type="button" class="btn btn-sm btn-info next pull-right">下一步</button>
+                    </a>
+                </form>
+            </div>
+        </section>
+    </div>
+    <script>  
+        //对悬浮窗的设置  
+        function validatelt(inputelement, err) {
+            if (inputelement.validity.patternMismatch) {
+                inputelement.setCustomValidity(err);
+
+            } else {
+                inputelement.setCustomValidity("");
+                return true;
+            }
+        }
+
+
+        var num_price = parseFloat($('#num_price').text());
+        var num_total = parseFloat($("#num_total").text());
+
+        // 票种信息
+        $("#num_price").keyup(function () {
+            var num_total = parseFloat($("#num_total").text());
+            if ($("#num_price").text() == "") {
+                num_total = "";
+            }
+            num_total = num_price * num_amount;
+            return $("#num_total").text(num_total);
+        });
+
+        // minus
+        $("#click_minus").click(function () {
+            var num_dec = parseInt($("#num_amount").val()) - 1;
+            if (num_dec < 1) {
+                //购买数量必须大于或等于1
+                return $("#num_total").text(num_total);
+            } else {
+                $("#num_amount").val(num_dec);
+            }
+            num_total = (num_price * num_dec).toFixed(2);
+            return $("#num_total").text(num_total);
+        });
+
+        // plus
+        $("#click_plus").click(function () {
+            var num_add = parseInt($("#num_amount").val()) + 1;
+            if ($("#num_amount").val() == "") {
+                num_add = 1;
+            }
+            $("#num_amount").val(num_add);
+            console.log(num_price);
+            console.log(num_add);
+            num_total = (num_price * num_add).toFixed(2);
+            return $("#num_total").text(num_total);
+        });
+
+        // 校验表单
+
+        //验证手机号码合法性
+
+        function checkMobile() {
+                var mobile = $('#mobile').val();
+                if (!(/^1[34578]\d{9}$/.test(mobile))) {
+                    $(".mobile-error").show();
+                    return false;
+                }
+                else{
+                    $(".mobile-error").hide();
+                    $(".mobile-success").show();
+                    setTimeout(() => {
+                        $(".mobile-success").hide();
+                        return true;
+                    }, 1000);
+                    return true;
+                }
+
+            }
+
+            function checkName() {
+                var name = $("#name").val();
+                if(!/^[\u4e00-\u9fa5]{2,}$/.test(name)){
+                    $(".name-error").show();
+                    return false;
+                }
+                else{
+                    $(".name-error").hide();
+                    $(".name-success").show();
+                    setTimeout(() => {
+                        $(".name-success").hide();
+                        return true;
+                    }, 1000);
+                    return true;
+                }
+            }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+//px转换rem
+@function px2rem($px) {
+    $rem: 37.5px;
+    @return ($px / $rem)+rem;
+}
+
+
+/* 头部搜索框  */
+
+.header-nav {
+    background: #fff;
+    padding: px2rem(8px);
+    text-align: right;
+    .btn {
+        width: px2rem(100px); // height: px2rem(40px);
+        line-height: 2.2;
+        display: inline-block;
+        border-radius: px2rem(10px);
+        font-size: 1em;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.index-carousel-indicators {
+    li.active {
+        background: #5b9370;
+        border-color: #5b9370;
+    }
+}
+
+
+/* 公告 */
+
+.plate-title {
+    padding-left: px2rem(14px);
+    border-left: #f00 px2rem(3px) solid;
+    margin-bottom: px2rem(20px);
+    font-weight: 400;
+}
+
+.affiche-carousel-indicators {
+    position: absolute;
+    bottom: px2rem(20px);
+    left: 86%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    text-align: center;
+    list-style: none;
+    margin-bottom: px2rem(0px);
+}
+
+.affiche-carousel-indicators {
+    li {
+        background: #333;
+        border-color: #333;
+    }
+}
+
+.affiche-carousel-indicators {
+    .active {
+        background: #f00;
+        border-color: #f00;
+    }
+}
+
+.affiche-carousel-inner {
+    border-radius: px2rem(6px);
+}
+
+.affiche-title {
+    margin-top: px2rem(18px);
+}
+
+.affiche-date {
+    color: #9d9d9d;
+    font-size: px2rem(12px);
+}
+
+
+/* 课程分类 */
+
+.course-list {
+    .row {
+        a {
+            margin-bottom: px2rem(10px);
+            img{
+                width: 100%;
+                height: px2rem(90px);
+            }
+        }
+    }
+}
+
+.course-list-more {
+    font-weight: normal;
+    width: 100%;
+    color: #9a9a9a;
+    border-color: #d4d4d4;
+    background: #fff;
+    padding: px2rem(10px) 0;
+    margin: px2rem(14px) 0;
+}
+
+
+/* 热门推荐 */
+
+.hot-recommend,
+.vip-area {
+    background: #fff;
+    padding: px2rem(14px) 0;
+    margin-top: px2rem(20px);
+    figure{
+        img{
+            width: 100%;
+            height: px2rem(90px);
+        }
+    }
+}
+
+.hotRecommend-item a,
+.prefecture-item a {
+    font-size: 1em;
+    line-height: 2;
+    color: #333;
+    margin-left: px2rem(5px);
+    padding-bottom: px2rem(2px);
+}
+
+.hotRecommend-list li.active a,
+.prefecture-list li.active a {
+    color: #f00;
+    border-bottom: px2rem(1px) solid #f00;
+}
+
+.player-icon {
+    color: #fff;
+    font-size: px2rem(36px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: px2rem(-16px);
+    margin-top: px2rem(-47px);
+}
+
+.hot-recommend-txt {
+    margin-top: px2rem(8px);
+    margin-left: px2rem(2px);
+}
+
+.play-number {
+    color: #989898;
+    margin-left: px2rem(5px);
+    margin-top: px2rem(-6px);
+}
+
+.play-number {
+    .glyphicon-eye-open {
+        padding-right: px2rem(3px);
+    }
+}
+
+
+/* 友情链接 */
+
+.friendLinks-title {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+/* 尾部 */
+
+.index-footer {
+    margin-top: px2rem(-18px);
+    text-align: center;
+    font-size: px2rem(12px);
+    background: #fff;
+    margin-bottom: px2rem(70px);
+}
+
+.contact-us {
+    height: px2rem(50px);
+    padding-top: px2rem(17px);
+    border-bottom: px2rem(1px) solid #efeff1;
+}
+
+.contact-us {
+    a {
+        display: inline-block;
+        width: 50%;
+        color: #6e6e6e;
+    }
+}
+
+.contact-us {
+    a.intro {
+        border-right: px2rem(1px) solid #999
+    }
+}
+
+.copyright {
+    color: #9d9d9d;
+    padding: px2rem(10px) 0;
+    margin-bottom: 0;
+    display: block;
+}
+
+
+/* 遮罩层 */
+
+.mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .4);
+    z-index: 16;
+    display: none;
+}
+
+/* 弹窗 关注公众号 */
+
+.wechat-window {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: px2rem(-150px);
+    top: px2rem(80px);
+    width: px2rem(300px);
+    height: px2rem(300px);
+    z-index: 16;
+    text-align: center;
+    border: none;
+    border-radius: px2rem(6px);
+    background: rgba(0, 0, 0, 0);
+    .wechat-img {
+        margin: 0 auto;
+    }
+}
+
+.close-btn {
+    color: #fff;
+    font-size: 2em;
+    margin-top: px2rem(30px);
+    margin-left: px2rem(-10px);
+}

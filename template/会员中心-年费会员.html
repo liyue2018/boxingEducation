@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('inc/header-common-static.html',{"title":"会员中心","css_source":"<link rel='stylesheet' href='css/user-info.css'>"})
+
+<body>
+    @@include('inc/top-header-bar.html',{"topHeader_title":"会员中心"})
+    <section class="member-center">
+        <figure>
+            <figcaption>会员类型</figcaption>
+            <div class="member-types">
+                <p>年费会员
+                    <small>剩余300天</small>
+                    <button class="btn btn-xs btn-info pull-right">续费</button>
+                </p>
+            </div>
+        </figure>
+        <hr />
+        <figure>
+            <figcaption>享受权益</figcaption>
+            <!-- 年费会员 -->
+            <dl class="ordinary-member">
+                <dt>年费会员：</dt>
+                <dd>能够及时收听更新课程</dd>
+                <dd>能够及时收听更新课程</dd>
+                <dd>拥有推广高收益</dd>
+            </dl>
+        </figure>
+    </section>
+</body>
+</html>

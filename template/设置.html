@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('inc/header-common-static.html',{"title":"设置","css_source":"<link rel='stylesheet' href='css/user-info.css'>"})
+<body>
+    @@include('inc/top-header-bar.html',{"topHeader_title":"设置"})
+    <div class="userInfo">
+        <div class="container">
+            <!-- 有箭头的版本 -->
+            <ul class="userInfo-list list-unstyled">
+                <li class="list-group-item">账号管理
+                    <a href="./账号管理.html"><span class="pull-right glyphicon glyphicon-menu-right"></span></a>
+                </li>
+                <li class="list-group-item">手机号
+                    <a class="pull-right" href="./手机号.html">
+                        <span>188******88</span>
+                        <span class="glyphicon glyphicon-menu-right"></span>
+                    </a>
+                </li>
+                <li class="list-group-item no-border">密码设置
+                    <a class="pull-right" href="./密码设置.html">
+                        <span class="glyphicon glyphicon-menu-right"></span>
+                    </a>
+                </li>
+                <li class="list-group-item">求助反馈
+                    <a class="pull-right" href="./求助反馈.html">
+                        <span class="glyphicon glyphicon-menu-right"></span>
+                    </a>
+                </li>
+                <li class="list-group-item">关于
+                    <a class="pull-right" href="./关于.html">
+                        <span class="glyphicon glyphicon-menu-right"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 退出登录 -->
+    <div class="exit-btn">
+        <button class="btn btn-sm btn-default">退出登录</button>
+    </div>
+</body>
+</html>

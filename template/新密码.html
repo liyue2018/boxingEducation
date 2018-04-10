@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('inc/header-common-static.html',{"title":"设置-密码设置-新密码","css_source":"<link rel='stylesheet' href='css/user-info.css'>"})
+<body>
+    @@include('inc/top-header-bar.html',{"topHeader_title":"修改登录密码"})
+    <p class="new-password">请为您的账号&nbsp;<b>188******88</b>&nbsp;设置一个新密码</p>
+    <div class="input-group new-password-input">
+        <label for="login_password" class="sr-only">新密码</label>
+        <input type="password" name="password" id="login_password" class="login-password input-control" placeholder="8-20位(不能全是数字或字母)"/>
+    </div>
+    <div class="container">
+        <button class="btn btn-sm btn-info changeMobile-btn" type="aubmit" role="button">保存新密码</button>
+    </div>
+</body>
+</html>
